@@ -1,9 +1,10 @@
 
+
 function Header (){
     return(
-        <header class="Header">
-            <h1>Emily Cassel</h1>
-            <div>
+        <header className="header">
+            <h1 className="myName">Emily Cassel</h1>
+            <div className="homePageLinks">
                 <nav>
                     <a href="/">Home</a>
                     <a href="/Portfolio">Portfolio</a>

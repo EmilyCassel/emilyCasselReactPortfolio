@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 10%;
@@ -5,7 +8,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #f3a8cb;
+  background-color: #e385b1;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,41 +16,61 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #d7dddd;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #000000;
-}
-
-.Header {
+//homepage
+.header {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 0px;
+  width: 100%;
   min-height: 10vh;
   padding: 0px 3%;
   margin-top: 0%;
-  display: flex;
-  align-items: center;
+  text-decoration: inherit;
   justify-content: space-between;
-  nav {
-    a {
-      &:not(:last-child) {
-        margin-right: 5px;
-      }
-    }
-  }
 }
 
 
-h1 {
-  font-size: 3.2em;
+.myName {
+  font-size: 100px;
   line-height: 1;
+  font-family: "Satisfy", cursive;
+  color: #d8d8d8;
 }
+
+.homePageLinks{
+  font-size: 70px;
+  line-height: 1;
+  font-family: "Satisfy", cursive;
+  color: #740337;
+}
+
+
+
+
+//PortfolioPage 
+.portfolioList{
+  display: flex;
+  flex-direction: column;
+}
+
+.projectTypes{
+  display: flex;
+}
+
+
+//Contact Page
+
+
+
+
+
+
+
+
+
+
+
 
 button {
   border-radius: 8px;
@@ -61,37 +84,7 @@ button {
   transition: border-color 0.25s;
 }
 
-button:hover {
-  border-color: #000000;
-}
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-
-
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.h1 {
-  font-weight: 500;
-  color: #840909;
-  text-decoration: inherit;
-}
 
 a {
   font-weight: 500;
@@ -100,7 +93,7 @@ a {
 }
 
 a:hover {
-  color: #535bf2;
+  color: #a51760;
 }
 
 body {
@@ -112,20 +105,8 @@ body {
 }
 
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
 button:hover {
-  border-color: #780303;
+  border-color: #ffffff;
 }
 
 button:focus,
@@ -137,49 +118,17 @@ button:focus-visible {
 
 
 
+// @media (prefers-color-scheme: light) {
+//   :root {
+//     color: #213547;
+//     background-color: #ffffff;
+//   }
 
+//   a:hover {
+//     color: #747bff;
+//   }
 
-
-
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}
+//   button {
+//     background-color: #f9f9f9;
+//   }
+// }
