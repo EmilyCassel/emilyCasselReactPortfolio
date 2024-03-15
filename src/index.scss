@@ -7,8 +7,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(221, 217, 217, 0.87);
-  background-color: #d66695;
+  color: #d66695;
+  background-color: blanchedalmond;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,26 +16,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-//homepage
+//constant
 .header {
   display: flex;
   flex-direction: row;
   align-items: center;
   min-width: 0px;
   width: 100%;
-  padding: 0 10px;
+  padding: 10px 10px;
   margin: 0;
   text-decoration: inherit;
   justify-content: space-between;
   margin-top: 30px;
+  background-color: rgb(81, 81, 81);
 }
 
 .myName {
   font-size: 70px;
   font-family: "Satisfy", cursive;
-  color: #d8d8d8;
-  padding-left: 20px;
+  color: #d66695;
+  padding-left: 25px;
 }
+
 
 .homePageLinks{
   display: flex;
@@ -45,13 +47,23 @@
 .mainLink{
   font-size: 50px;
   font-family: "Satisfy", cursive;
-  color: #8c0041;
+  color: #d66695;
   padding: 0 20px;
 }
 
-
-
-
+.footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 0px;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 0;
+  text-decoration: inherit;
+  justify-content: space-between;
+  margin-top: 30px;
+  background-color: rgb(81, 81, 81);
+}
 
 //PortfolioPage 
 
@@ -67,6 +79,7 @@
   
 
 }
+
 .portfolioList{
   display: flex;
   flex-direction: column;
@@ -74,8 +87,14 @@
 
 .projectTypeHeader{
   display: flex;
- 
+ font-size: 300%;
+}
+.projectType1{
 
+}
+
+.projectType2{
+  
 }
 
 .projectLink{
@@ -83,13 +102,52 @@
 }
 
 
+.freeLancerImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+.line{
+  color: #d66695;
+}
+
+
+
+
+
+
 
 //Contact Page
+.allContact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.pleaseContact{
+  font-size: 350%;
+  padding: 20px;
+
+}
+
+.singleBody{
+  padding:15px;
+  font-size: 250%;
+}
 
 
 
-
-
+//footer 
+.footer{
+  display: flex;
+  color: #d66695;
+  background-color: rgb(81, 81, 81);
+}
 
 
 
@@ -124,7 +182,7 @@ a:hover {
 
 
 button:hover {
-  border-color: #ffffff;
+  border-color: #d66695;
 }
 
 button:focus,

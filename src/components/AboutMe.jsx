@@ -1,6 +1,6 @@
-function Header (){
+function AboutMe (){
     return(
-        <header>
+        <div>
             <h1>About Me</h1>
             <div>
                 <p>
@@ -8,8 +8,8 @@ function Header (){
                 </p>
             </div>
             
-        </header>
+        </div>
     )
 }
 
-export default Header;
+export default AboutMe;
