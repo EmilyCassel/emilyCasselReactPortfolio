@@ -16,6 +16,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body, html{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  overflow-x: clip;
+}
+
+main{
+  flex: 1;
+}
+
+
+
 //constant
 .header {
   display: flex;
@@ -23,13 +37,14 @@
   align-items: center;
   min-width: 0px;
   width: 100%;
-  padding: 10px 10px;
+  padding: 20px;
   margin: 0;
   text-decoration: inherit;
   justify-content: space-between;
-  margin-top: 30px;
   background-color: rgb(81, 81, 81);
 }
+
+
 
 .myName {
   font-size: 70px;
@@ -41,6 +56,7 @@
 
 .homePageLinks{
   display: flex;
+  padding-right: 20px;
  
 }
 
@@ -54,16 +70,84 @@
 .footer{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
   min-width: 0px;
   width: 100%;
   padding: 10px 10px;
   margin: 0;
   text-decoration: inherit;
-  justify-content: space-between;
-  margin-top: 30px;
   background-color: rgb(81, 81, 81);
+  color: #d66695;
 }
+
+
+
+
+
+//home/aboutMe
+.aboutMe{
+  display: flex;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.aboutMeImageResume{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.aboutMeImage{
+  display: flex;
+  justify-content: center;
+}
+
+.resumeLink{
+  display: flex;
+  justify-content: center;
+  font-family: "Satisfy", cursive;
+  color: #d66695;
+}
+
+.linkedInLink{
+  display: flex;
+  justify-content: center;
+  font-family: "Satisfy", cursive;
+  color: #d66695;
+}
+
+.aboutMeInformation{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ 
+}
+
+.aboutMeHeader{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  font-family: "Satisfy", cursive;
+}
+
+.aboutMeParagraph{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 //PortfolioPage 
 
@@ -142,12 +226,6 @@
 
 
 
-//footer 
-.footer{
-  display: flex;
-  color: #d66695;
-  background-color: rgb(81, 81, 81);
-}
 
 
 

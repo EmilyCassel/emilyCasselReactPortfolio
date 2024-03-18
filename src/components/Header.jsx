@@ -2,7 +2,7 @@
 
 function Header() {
     return (
-        <div className="header">
+        <header className="header">
             <h1 className="myName">Emily Cassel</h1>
             <nav className="homePageLinks">
                 <h2><a className="mainLink" href="/">Home</a></h2>
@@ -11,7 +11,7 @@ function Header() {
             </nav>
 
 
-        </div>
+        </header>
     )
 }
 
