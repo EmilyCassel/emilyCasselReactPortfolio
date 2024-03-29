@@ -26,7 +26,7 @@ function Portfolio() {
               <p className="projectLink"><a href="">Link</a></p>
           </div>
           <div className="projectType2">
-            <h2 className="projectHeader2">All ABout Animals</h2>
+            <h2 className="projectHeader2">Animals of North America</h2>
               <p className="projectLink"><a href="">Link</a></p>
           </div>
           <div className="projectType1">

@@ -1,5 +1,5 @@
 function Resume (){
-    resume (
+    return (
      <div className="resumeMain">
         <div className="links"></div>
             <h1><a>Skills</a></h1>

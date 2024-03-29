@@ -47,10 +47,10 @@ main{
 
 
 .myName {
-  font-size: 70px;
+  font-size: 74px;
   font-family: "Satisfy", cursive;
   color: #d66695;
-  padding-left: 25px;
+  padding-left: 40px;
 }
 
 
@@ -61,7 +61,7 @@ main{
 }
 
 .mainLink{
-  font-size: 50px;
+  font-size: 55px;
   font-family: "Satisfy", cursive;
   color: #d66695;
   padding: 0 20px;
@@ -89,6 +89,7 @@ main{
   display: flex;
   width: 100%;
   padding-top: 20px;
+  height: 100%;
 }
 
 .aboutMeImageResume{
@@ -100,6 +101,12 @@ main{
 .aboutMeImage{
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 50%;
+  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 .resumeLink{
@@ -120,21 +127,19 @@ main{
   display: flex;
   flex-direction: column;
   width: 100%;
- 
+  height: 100%;
 }
 
 .aboutMeHeader{
   display: flex;
-  flex-direction: row-reverse;
   justify-content: center;
   font-family: "Satisfy", cursive;
 }
 
 .aboutMeParagraph{
   display: flex;
-  flex-direction: row-reverse;
   justify-content: center;
-  
+  height: 100%;
 }
 
 
