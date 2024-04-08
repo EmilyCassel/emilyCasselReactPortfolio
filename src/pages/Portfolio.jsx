@@ -5,14 +5,7 @@ function Portfolio() {
   return (
     <div>
       <header>
-        {/* <nav className="projectLinkList">
 
-          <h1><a href="" className="projectTypeLink">Class Projects</a></h1>
-
-          <h1><a href="" className="projectTypeLink">Personal Projects</a></h1>
-
-          <h1><a href="" className="projectTypeLink">Professional Projects</a></h1>
-        </nav> */}
       </header>
 
 
@@ -22,18 +15,28 @@ function Portfolio() {
 
         <h1 className="projectTypeHeader">Personal Projects</h1>
           <div className="projectType1">
-            <h2 className="projectHeader1">United States</h2>
+            <h2 className="projectHeader1">WonderLustStates</h2>
               <p className="projectLink"><a href="">Link</a></p>
           </div>
+          <hr className="line"/>
+
+
           <div className="projectType2">
-            <h2 className="projectHeader2">Animals of North America</h2>
+            <h2 className="projectHeader2">Between the Pages</h2>
               <p className="projectLink"><a href="">Link</a></p>
           </div>
+          <hr className="line"/>
+
+
           <div className="projectType1">
             <h2 className="projectHeader2">RedYarn Insurance</h2>
             <p className="projectLink"><a href="">Link</a></p>
           </div>
+          <hr className="line"/>
 
+
+
+          
 
         <hr className="line"/>
 
