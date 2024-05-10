@@ -36,34 +36,36 @@ main{
   align-items: center;
   min-width: 0px;
   width: 100%;
-  padding: 20px;
+  padding-bottom: 10px;
+  padding-top: 25px;
   margin: 0;
   text-decoration: inherit;
   justify-content: space-between;
   background-color: rgb(81, 81, 81);
 }
 
-
-
 .myName {
-  font-size: 74px;
+  font-size: 85px;
   font-family: "Satisfy", cursive;
   color: #d66695;
-  padding-left: 40px;
+  padding-left: 47px;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin: 0;
 }
-
 
 .homePageLinks{
   display: flex;
-  padding-right: 20px;
- 
+  padding-right: 30px;
+  padding-bottom: 0;
+  margin: 0;
 }
 
 .mainLink{
-  font-size: 55px;
+  font-size: 65px;
   font-family: "Satisfy", cursive;
   color: #d66695;
-  padding: 0 20px;
+  padding: 0 25px;
 }
 
 
@@ -90,10 +92,10 @@ main{
 //home/aboutMe
 .aboutMe{
   display: flex;
-  width: 100%;
+  // width: 100%;
   padding-top: 20px;
-  height: 100%;
-  justify-content: space-around;
+  // height: 100%;
+  // justify-content: space-around;
 }
 
 .aboutMeImageResume{
@@ -101,6 +103,7 @@ main{
   flex-direction: column;
   width: 100%;
   margin-right: 0;
+  padding-right: 0;
 }
 
 .aboutMeImage{
@@ -109,11 +112,12 @@ main{
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
-  width: 45%;
+  width: 35%;
   margin-bottom: 20px;
   margin-top: 15px;
   margin-left: 15%;
-  margin-right: 10%;
+  margin-right: 8%;
+
 }
 
 .aboutMeGrouping{
@@ -125,6 +129,9 @@ main{
 .introduction{
   display: flex;
   align-items: center;
+  padding: 0;
+  margin: 0;
+
   
 }
 
@@ -132,6 +139,7 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  font-size: 22px;
 }
 
 .resumeLink{
@@ -163,14 +171,20 @@ main{
   height: 100%;
 }
 
-
-
-
-//aboutMeComponent
 .aboutMeHeader{
   display: flex;
   justify-content: center;
   font-family: "Satisfy", cursive;
+  font-size: 50px;
+}
+
+
+//aboutMeComponent
+.aboutMePageHeader{
+  display: flex;
+  justify-content: center;
+  font-family: "Satisfy", cursive;
+  font-size: 50px;
 }
 
 
@@ -178,12 +192,9 @@ main{
   display: flex;
   justify-content: center;
   height: 100%;
+  padding: 0 20px;
+  font-size: 20px;
 }
-
-
-
-
-
 
 
 
@@ -194,54 +205,137 @@ main{
 
 //PortfolioPage 
 
-.projectLinkList{
+.portfolioHeader{
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.projectTypeLink{
-  display: flex;
-  flex-direction: row;
-  
 
 }
 
 .portfolioList{
   display: flex;
+}
+
+.projectFreeLancer{
+  display: flex;
+  flex-direction: column;
+}
+.freeLancerHeader{
+  padding-left: 10px;
+}
+
+.freeLancerBody{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.freeLancerInnerBody{
+  display: flex;
   flex-direction: column;
 }
 
-.projectTypeHeader{
-  display: flex;
- font-size: 300%;
-}
-.projectType1{
-
+.freeLancerParagraph{
+  padding-left: 10px;
 }
 
-.projectType2{
-  
+
+.freeLancerLink{
+  padding-left: 100px;
 }
-
-.projectLink{
-
-}
-
 
 .freeLancerImage{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding-bottom: 150px;
+  width: 45%;
 }
 
 
 
-.line{
+//Resume page
+.resumeLinks{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+a{
   color: #d66695;
 }
+
+
+.resumeHeadings{
+  display: flex;
+  flex-direction: column;
+}
+
+.pSHeader{}
+
+.pS{}
+
+.resumeSkillsList{
+  display: flex;
+  flex-direction: row;
+}
+
+.skillsBig{
+  display: flex;
+}
+
+.skillMini{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.workSectionHeader{}
+
+.workSectionAll{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.travelSection{
+  display: flex;
+  padding-bottom: 400px;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -300,8 +394,6 @@ main{
 a:hover {
   color: #000000;
 }
-
-
 
 button:hover {
   border-color: #d66695;

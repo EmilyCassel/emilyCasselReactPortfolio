@@ -10,7 +10,7 @@ function Home() {
             <div className="aboutMeBasics">
                <h1 className="aboutMeHeader">About Me</h1>
                <div className="aboutMeGrouping">
-                  <p classname="introduction">
+                  <p className="introduction">
                   As a Full-Stack Web Developer, my journey has been one of resilience, exploration, and discovering my true passion.
                   </p>
                <div className="aboutMeLinks">
