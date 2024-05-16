@@ -106,33 +106,53 @@ main{
   padding-right: 0;
 }
 
-.aboutMeImage{
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  width: 35%;
-  margin-bottom: 20px;
-  margin-top: 15px;
-  margin-left: 15%;
-  margin-right: 8%;
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  padding: 14px;
+  padding-bottom: 5%;
+  box-sizing: border-box;
 
+  .aboutMeImage {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+  }
+}
+
+
+
+
+.homeMeAll{
+  display: flex;
+  flex-direction: column;
 }
 
 .aboutMeGrouping{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  
 }
 
-.introduction{
+.aboutMeHeader{
   display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
+  font-family: "Satisfy", cursive;
+  font-size: 40px;
+}
 
-  
+.aboutMeParagraph{
+  display: flex;
+  align-items: flex-end;
+  font-size: 22px;
+  padding-top: 0;
+  margin-top: 0;
+  position: inherit;
+}
+
+.introductionAndLinkedIn{
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
 }
 
 .aboutMeLinks{
@@ -142,59 +162,54 @@ main{
   font-size: 22px;
 }
 
-.resumeLink{
-  display: flex;
-  justify-content: center;
-  font-family: "Satisfy", cursive;
-  color: #d66695;
-}
+// .resumeLink{
+//   display: flex;
+
+//   font-family: "Satisfy", cursive;
+//   color: #d66695;
+// }
 
 .linkedInLink{
   display: flex;
-  justify-content: center;
   font-family: "Satisfy", cursive;
   color: #d66695;
+  font-size: 30px;
 }
 
-
-.aboutMeLink{
+.tabsAll{
   display: flex;
-  justify-content: center;
-  font-family: "Satisfy", cursive;
-  color: #d66695;
+  padding-bottom: 100px;
+  padding-top: 30px;
 }
 
-.aboutMeInformation{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
 
-.aboutMeHeader{
-  display: flex;
-  justify-content: center;
-  font-family: "Satisfy", cursive;
-  font-size: 50px;
-}
 
+
+
+
+// .aboutMeInformation{
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+//   height: 100%;
+// }
 
 //aboutMeComponent
-.aboutMePageHeader{
-  display: flex;
-  justify-content: center;
-  font-family: "Satisfy", cursive;
-  font-size: 50px;
-}
+// .aboutMePageHeader{
+//   display: flex;
+//   justify-content: center;
+//   font-family: "Satisfy", cursive;
+//   font-size: 50px;
+// }
 
 
-.aboutMeParagraph{
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  padding: 0 20px;
-  font-size: 20px;
-}
+// .aboutMeParagraph{
+//   display: flex;
+//   justify-content: center;
+//   height: 100%;
+//   padding: 0 20px;
+//   font-size: 20px;
+// }
 
 
 
