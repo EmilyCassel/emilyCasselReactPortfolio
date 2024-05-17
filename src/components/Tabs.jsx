@@ -1,24 +1,31 @@
 import React, { useState } from 'react';
 
 export function Tabs({ children }) {
-    const [activeTab, setActiveTab] = useState(0);
+    const [activeTab, setActiveTab] = useState(null);
 
-    const handleTabClose = (index) => {
-        setActiveTab(index === activeTab ? -1 : activeTab); // If the current tab is closed, set activeTab to -1
+    const handleTabClick = (title) => {
+        setActiveTab(activeTab === title ? null : title); // Toggle the active tab when clicked
+    };
+
+    const handleCloseTab = (title) => {
+        if (activeTab === title) {
+            setActiveTab(null);
+        }
     };
 
     const titles = React.Children.map(children, (child, index) => {
         if (React.isValidElement(child)) {
+            const { title } = child.props;
             return (
                 <button
                     key={index}
-                    onClick={() => setActiveTab(index)}
+                    onClick={() => handleTabClick(title)}
                     style={{
-                        fontWeight: activeTab === index ? "bold" : "normal",
+                        fontWeight: activeTab === title ? "bold" : "normal",
                         marginRight: "8px"
                     }}
                 >
-                    {child.props.title}
+                    {title}
                 </button>
             );
         }
@@ -31,30 +38,90 @@ export function Tabs({ children }) {
                 {titles}
             </div>
             <div>
-                {React.Children.map(children, (child, index) => {
-                    return (
-                        <div style={{ display: activeTab === index ? 'block' : 'none' }}>
-                            {child}
-                            <button onClick={() => handleTabClose(index)}>Close Tab</button>
-                        </div>
-                    );
+                {React.Children.map(children, (child) => {
+                    if (React.isValidElement(child)) {
+                        const { title } = child.props;
+                        return (
+                            <div style={{ display: activeTab === title ? 'block' : 'none' }}>
+                                {child}
+                                {activeTab === title && <button onClick={() => handleCloseTab(title)}>Close Tab</button>}
+                            </div>
+                        );
+                    }
+                    return null;
                 })}
             </div>
         </div>
     );
 }
 
-
-
-
-export function Tab({ title, children, onClose }) {
+export function Tab({ title, children }) {
     return (
         <div>
             <div>{children}</div>
-
         </div>
     );
 }
+
+
+
+// import React, { useState } from 'react';
+
+// export function Tabs({ children }) {
+//     const [activeTab, setActiveTab] = useState(0);
+
+//     const handleTabClose = (index) => {
+//         setActiveTab(index === activeTab ? -1 : activeTab); // If the current tab is closed, set activeTab to -1
+//     };
+
+//     const titles = React.Children.map(children, (child, index) => {
+//         if (React.isValidElement(child)) {
+//             return (
+//                 <button
+//                     key={index}
+//                     onClick={() => setActiveTab(index)}
+//                     style={{
+//                         fontWeight: activeTab === index ? "bold" : "normal",
+//                         marginRight: "8px"
+//                     }}
+//                 >
+//                     {child.props.title}
+//                 </button>
+//             );
+//         }
+//         return null;
+//     });
+
+//     return (
+//         <div>
+//             <div style={{ marginBottom: '16px' }}>
+//                 {titles}
+//             </div>
+//             <div>
+//                 {React.Children.map(children, (child, index) => {
+//                     return (
+//                         <div style={{ display: activeTab === index ? 'block' : 'none' }}>
+//                             {child}
+//                             <button onClick={() => handleTabClose(index)}>Close Tab</button>
+//                         </div>
+//                     );
+//                 })}
+//             </div>
+//         </div>
+//     );
+// }
+
+
+
+
+// export function Tab({ title, children, onClose }) {
+//     return (
+//         <div>
+//             <div>{children}</div>
+
+//         </div>
+//     );
+// }
 
 
 

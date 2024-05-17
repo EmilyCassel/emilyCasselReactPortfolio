@@ -210,14 +210,32 @@ function Home() {
                                 </Tab>
 
 
+                                <Tab title={"Volunteer Experience"} onClose={() => handleTabClose(index)}>
+                                    <div className="volunteerSection" id="volunteerExperience"></div>
+                                    <h1>Location: Lynchburg Methodist Church</h1>
+                                      
+                                        <h2>Backpacking Lunch Program:</h2>
+                                            <h3>The Backpacking Lunch Program packed food for the weekend for those in food desserts. Lynchburg Methodist Church was linked to two local elementary schools. We received a list of from the school fo those who wished to participate in the program. Each Thursday we would pack grocery bags with enough food to get the individual families through the weekend.</h3>
+                                            <h3>When: September 2017 - April 2020</h3>
+                                                <h4>Stopped volunteering because program altered due to COVID</h4>
+                                            <h3>Relevant Skills:</h3>
+                                                <ul>
+                                                    <li>Awareness</li>
+                                                </ul>
+
+                                        <h2>United Methodist Women Group</h2>
+                                            <h3>When: September 2017 - Current</h3>
+
+
+                                </Tab>
+
                                 <Tab title={"Travel Experience"} onClose={() => handleTabClose(index)}>
                                     <div className="travelSection" id="travelExperience">
-                                        <h2>Travel Experience</h2>
-                                        <h3>Travel Experience 2021 - 2023</h3>
-                                        <h4>Switzerland, France, Australia, Netherlands, Liechtenstein, Germany, Belgium, Luxembourg, Portugal, 25 States of the United States of America</h4>
-                                        <h3>Life Travel Experience</h3>
-                                        <h4>Canada, 49 of the United States, Italy, Switzerland, France, Germany, Puerto Rico and five Caribbean Islands</h4>
-                                        <h3>Relevant Skills:</h3>
+                                        <h2>Travel Experience 2021 - 2023</h2>
+                                        <h3>Switzerland, France, Australia, Netherlands, Liechtenstein, Germany, Belgium, Luxembourg, Portugal, 25 States of the United States of America</h3>
+                                        <h2>Life Travel Experience</h2>
+                                        <h3>Canada, 49 of the United States, Italy, Switzerland, France, Germany, Puerto Rico and five Caribbean Islands</h3>
+                                        <h2>Relevant Skills:</h2>
                                         <ul>
                                             <li>Ability to speak and read travel French, German and Spanish</li>
                                             <li>Increased French, Spanish and German language skills</li>
@@ -230,6 +248,7 @@ function Home() {
                                         </ul>
                                     </div>
                                 </Tab>
+                               
 
 
                             </Tabs>
