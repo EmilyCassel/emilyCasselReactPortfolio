@@ -73,7 +73,7 @@ function Home() {
                                     <div className="workSectionAll">
 
                                         <div className="currentWork">
-                                            <h3 className="currentWorkHeader">Current</h3>
+                                            <h3 className="currentWorkHeader">Current Work</h3>
                                             <div className="goatWork">
                                                 <h4 className="workLocation">Location: CU@LilRedBarn Goat Farm Inc. Muncie, IN</h4>
                                                 <h4 className="workDescription">Housekeeper, Landscaper, Executive Secretary, Animal Caretaker</h4>
@@ -97,7 +97,7 @@ function Home() {
                                             </div>
                                         </div>
                                         <div>
-                                            <h3 className="previousWorkHeader">Previous</h3>
+                                            <h3 className="previousWorkHeader">Previous Work</h3>
                                             <div className="otherWork">
                                                 <div className="hospitalWork">
                                                     <h4 className="workLocation">Location: Bedford Hospital Bedford, VA</h4>
@@ -212,19 +212,28 @@ function Home() {
 
                                 <Tab title={"Volunteer Experience"} onClose={() => handleTabClose(index)}>
                                     <div className="volunteerSection" id="volunteerExperience"></div>
-                                    <h1>Location: Lynchburg Methodist Church</h1>
+                                    <h1>Volunteer Experience</h1>
+                                    <h2>Location: Lynchburg Methodist Church</h2>
                                       
-                                        <h2>Backpacking Lunch Program:</h2>
-                                            <h3>The Backpacking Lunch Program packed food for the weekend for those in food desserts. Lynchburg Methodist Church was linked to two local elementary schools. We received a list of from the school fo those who wished to participate in the program. Each Thursday we would pack grocery bags with enough food to get the individual families through the weekend.</h3>
-                                            <h3>When: September 2017 - April 2020</h3>
-                                                <h4>Stopped volunteering because program altered due to COVID</h4>
-                                            <h3>Relevant Skills:</h3>
+                                        <h3>Backpacking Lunch Program:</h3>
+                                            <h4>The Backpacking Lunch Program packed food for the weekend for those in food desserts. Lynchburg Methodist Church was linked to two local elementary schools. We received a list of from the school fo those who wished to participate in the program. Each Thursday we would pack grocery bags with enough food to get the individual families through the weekend.</h4>
+                                            <h4>When: September 2017 - April 2020</h4>
+                                                <h5>Stopped volunteering because program altered due to COVID</h5>
+                                            <h4>Relevant Skills:</h4>
                                                 <ul>
-                                                    <li>Awareness</li>
+                                                    <li>Awareness of the world around me</li>
+                                                    <li>Teamwork</li>
+                                                    <li>Increased compassion for others</li>
+                                                    <li>Commitment to a more caring world</li>
                                                 </ul>
 
-                                        <h2>United Methodist Women Group</h2>
-                                            <h3>When: September 2017 - Current</h3>
+                                    <h2>United Methodist Women Group</h2>
+                                        <h3>When: September 2017 - Current</h3>
+                                        <h3>Activities:</h3>
+                                            <ul>
+                                                <li>Worked with the United Methodist Women's Group raise money to help educate families that want to become child advocates</li>
+                                                <li>Worked in the backpacking program</li>
+                                            </ul>
 
 
                                 </Tab>

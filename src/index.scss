@@ -371,29 +371,6 @@ a{
   flex-direction: row;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .travelSection{
   display: flex;
   padding-bottom: 400px;
@@ -401,6 +378,21 @@ a{
 }
 
 
+.tabs{
+  display: flex;
+  flex-direction: row;
+  .tab-button{
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    font-weight: normal;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+  }
+
+}
 
 
 
@@ -486,7 +478,35 @@ button:focus-visible {
 
 
 
+@media only screen and (max-width: 480px) {
+  .aboutMeGrouping{
+    flex-direction: column;
+  } 
+  .header{
+    flex-direction: column;
+  }
+  .homePageLinks{
+    flex-direction: column;
+  }
+  .freeLancerBody{
+    flex-direction: column;
+  }
+  .freeLancerImage{
+    width: auto;
+  }
+  .goatsBody{
+    flex-direction: column;
+  }
+  .goatsImage{
+    width: auto;
+  }
+  .tabsAll{
+    flex-direction: column;
 
+  }
+}
+
+//tablets 768px 
 
 // @media (prefers-color-scheme: light) {
 //   :root {
