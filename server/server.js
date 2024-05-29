@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const path = require('path')
 
 app.use(express.json());
 
@@ -10,6 +11,8 @@ if (process.env.NODE_ENV === 'production') {
         res.sendFile(path.join(__dirname, '../client/dist/index.html'))
     })
 }
+
+
 
 const PORT = process.env.PORT || 3014;
 
