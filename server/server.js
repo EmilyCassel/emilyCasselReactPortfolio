@@ -5,10 +5,13 @@ const path = require('path')
 app.use(express.json());
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('../client/dist')) //builds out routes automatically
+
+    const clientPath = path.resolve(__dirname, '../client/dist');
+
+    app.use(express.static(clientPath)) //builds out routes automatically
 
     app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, '../client/dist/index.html'))
+        res.sendFile(path.join(clientPath, '../client/dist/index.html'))
     })
 }
 
