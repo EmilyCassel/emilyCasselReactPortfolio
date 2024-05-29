@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === 'production') {
     app.use(express.static(clientPath)) //builds out routes automatically
 
     app.get('*', (req, res) => {
-        res.sendFile(path.join(clientPath, '../client/dist/index.html'))
+        res.sendFile(path.join(clientPath, 'index.html'))
     })
 }
 
