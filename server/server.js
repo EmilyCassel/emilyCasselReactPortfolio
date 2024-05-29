@@ -1,26 +1,20 @@
 const express = require('express');
 const app = express();
-const path = require('path')
+const path = require('path');
 
 app.use(express.json());
 
 if (process.env.NODE_ENV === 'production') {
-
     const clientPath = path.resolve(__dirname, '../client/dist');
-
-    app.use(express.static(clientPath)) //builds out routes automatically
+    app.use(express.static(clientPath));
 
     app.get('*', (req, res) => {
-        res.sendFile(path.join(clientPath, 'index.html'))
-    })
+        res.sendFile(path.join(clientPath, 'index.html'));
+    });
 }
 
-
-
 const PORT = process.env.PORT || 3014;
-
 
 app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);
 });
-
