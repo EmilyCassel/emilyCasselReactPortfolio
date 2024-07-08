@@ -96,50 +96,8 @@ function Home() {
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div>
-                                            <h3 className="previousWorkHeader">Previous Work</h3>
-                                            <div className="otherWork">
-                                                <div className="hospitalWork">
-                                                    <h4 className="workLocation">Location: Bedford Hospital Bedford, VA</h4>
-                                                    <h4 lassName="workDescription">Certified Nursing Assistant</h4>
-                                                    <h4 className="workTime">When: December 2018-June 2019</h4>
-                                                    <h4 className="workDuties">Duties:</h4>
-                                                    <ul className="workDutiesList">
-                                                        <li>Assisted patients in their daily life tasks such as eating, changing and baths</li>
-                                                        <li>Was king and compassionate to patients taking time to learn their names and talk to them</li>
-                                                        <li>Changed bedding and sheets</li>
-                                                        <li>Charted daily activities accurately in an accurate time frame</li>
-                                                    </ul>
-
-                                                    <h4 className="workSLaD">Skills Learned and Demonstrated:</h4>
-                                                    <ul className="workSLaDList">
-                                                        <li>Compatible with many different groups of people and personalities </li>
-                                                        <li>Accomplished and dependable in teamwork and collaborative efforts </li>
-                                                        <li>Able to adjust to a changing and fast paced environments quickly and with ease</li>
-                                                        <li>Kept up to date on newest information and techniques</li>
-                                                        <li>Completed tasks in a timely and correct manner</li>
-                                                    </ul>
-                                                </div>
-                                                <div className="hospitalWork">
-                                                    <h4 className="workLocation">Location: Petsmart Lynchburg, VA</h4>
-                                                    <h4 lassName="workDescription">Service Champion</h4>
-                                                    <h4 className="workTime">When: October 2017- April 2018</h4>
-                                                    <h4 className="workDuties">Duties:</h4>
-                                                    <ul className="workDutiesList">
-                                                        <li>Provided accurate information to customers in a professional and helpful manner</li>
-                                                        <li>Worked the register quickly and competently with knowledge or what was in the store</li>
-                                                        <li></li>
-                                                    </ul>
-                                                    <h4 className="workSLaD">Skills Learned and Demonstrated:</h4>
-                                                    <ul className="workSLaDList">
-                                                        <li>Gained familiarity with repeat customers, learning names of pets and owners</li>
-                                                        <li>Professional and capable in dealing with different groups of people and their interests</li>
-                                                        <li>Utilized and strengthened teamwork and organizational skills </li>
-                                                        <li>Displays ability to resolve conflicts quickly and calmly</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
+                                        
                                     </div>
 
                                 </Tab>
