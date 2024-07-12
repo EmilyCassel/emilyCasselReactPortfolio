@@ -13,20 +13,17 @@ function Home() {
                     </div>
                     <div className="introductionAndLinkedIn">
                         <h2 className="aboutMeHeader">About Me</h2>
-                        <p className="aboutMeParagraph">
-                            As a Full-Stack Web Developer, my journey has been one of resilience, exploration, and discovering my true passion.
-                        </p>
-                        <p className="aboutMeParagraph">
-                            My academic journey commenced at 18, where I initially pursued nursing at Ball State University. However, life threw me a curveball at 20 when I faced health challenges. Despite the obstacles, I persevered and made the decision to transfer to IvyTech Community College in 2013. Over the next four years, amidst battling health issues, I realized that nursing wasn't my destined path. Thus, I transitioned my focus to Exercise Physiology.</p>
-                        <p className="aboutMeParagraph">
-                            In 2021, I proudly graduated from the University of Lynchburg with a degree in Exercise Physiology. However, the onset of COVID-19 limited opportunities, prompting me to embark on a three-year journey of travel. This period allowed me to fulfill many dreams that were once hindered by illness, while also delving into the world of logistics in my spare time. I passed the Import/Export Logistics Exam in October 2023.
-                        </p>
-                        <p className="aboutMeParagraph">
-                            Reflecting on my experiences as a patient, I realized that my interest in healthcare had waned more than anticipated. It was during this period of introspection that I discovered my newfound passion for web development. Enrolling in the Full-Stack Web Development Course at Rutgers University further solidified this passion, revealing the excitement and fulfillment I find in crafting digital solutions.
-                        </p>
-                        <p className="aboutMeParagraph">
-                            Now, armed with a diverse skill set and a fervent enthusiasm for web development, I am actively seeking opportunities to contribute my expertise, creativity and perseverance as a Full-Stack Web Developer.
-                        </p>
+                            <p className="aboutMeParagraph">
+                                Versatile Full Stack Web Developer with comprehensive training from Rutgers University Coding Bootcamp, specializing in JavaScript, CSS, and UI/UX design and development. Adept at collaborating within Agile environments, delivering clean code, and communicating effectively. Dedicated to continuous learning and innovation in both front-end and back-end technologies.</p>
+                            <p className="aboutMeParagraph">
+                                Reflecting on my experiences and newfound interests, I discovered a passion for web development. Enrolling in the Full-Stack Web Development Course at Rutgers University solidified this passion, as I found excitement and fulfillment in crafting digital solutions. Now, with a diverse skill set and fervent enthusiasm, I am eager to contribute my expertise, creativity, and perseverance as a Full-Stack Web Developer.
+                            </p>
+                            <p className="aboutMeParagraph">
+                                Now, armed with a diverse skill set and a fervent enthusiasm for web development, I am actively seeking opportunities to contribute my expertise, creativity and perseverance as a Full-Stack Web Developer.
+                            </p>
+                            <p className="aboutMeParagraph">
+                                I am eager to leverage my diverse skill set and passion for web development to pursue a career in full-stack JavaScript development.
+                            </p>
 
 
 
@@ -40,12 +37,20 @@ function Home() {
                                             <div className="skillBig">
                                                 <div className="skillMini">
                                                     <h3 className="skillType">Technical Skills</h3>
-                                                    <p className="skillParagraph">Proficiency in MS (Excel, Word, PowerPoint & Outlook), Google Application skills. Computer Literacy </p>
+                                                    <p className="skillParagraph">
+                                                    Software Languages: JavaScript, HTML, CSS, PostgreSQL
+                                                    Tools: VS Code, Node.js, Express.js, Handlebars.js, Tailwind, Canvas, Bootstrap, React, Gitflow/Github, JSON, Wordpress, Adobe Photoshop
+                                                    Frameworks/Libraries: jQuery, Bootstrap, Materialize.
+                                                    Additional Skills: Responsive design principles, testing frameworks, Web design and Layout, API Integration, Google Suite, Microsoft Office, Computer Literacy          
+
+                                                    </p>
                                                 </div>
 
                                                 <div>
-                                                    <h3 className="skillType">Soft Skills</h3>
-                                                    <p className="skillParagraph">Strong problem solving skills, exceptional time management skills. Flexible and dependable in a teamwork centered and fast paced environment. Excellent ability to maintain confidentiality. Works with a phenomenal imagination and creativity. </p>
+                                                    <h3 className="skillType">Transferable Skills</h3>
+                                                    <p className="skillParagraph">
+                                                    Creative Problem Solving, Project Management, Client Relations, Effective Communication, Customer Satisfaction, Dependability, Creativity, Adaptability and Flexibility, Learning and Training Methodology, Time Management, Analytical Thinking, Decision Making, Team Collaboration, Ability to Work Independently or as a Team, Attention to Detail, Abreast of Current Online Trends
+                                                         </p>
                                                 </div>
                                             </div>
 
@@ -56,10 +61,6 @@ function Home() {
                                                     <p className="skillParagraph">Familiar with ACE Business rules, HTSUS Classification, General Notes and 19 CFR. Passionate about logistics and working in the field of Duty Drawback</p>
                                                 </div>
 
-                                                <div className="skillMini">
-                                                    <h3 className="skillType">Full Stack Web Development Skills</h3>
-                                                    <p className="skillParagraph">JavaScript, Node.js, Express.js, MERN, React, Flexbox, Bootstrap, inquirer, jQuery, Tailwind, Object-Oriented, Programming, Object-Related Mapping, NoSQL, MySQL, MERN, State, Model-View-Controller, Web API’s</p>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -74,28 +75,53 @@ function Home() {
 
                                         <div className="currentWork">
                                             <h3 className="currentWorkHeader">Current Work</h3>
-                                            <div className="goatWork">
-                                                <h4 className="workLocation">Location: CU@LilRedBarn Goat Farm Inc. Muncie, IN</h4>
-                                                <h4 className="workDescription">Housekeeper, Landscaper, Executive Secretary, Animal Caretaker</h4>
-                                                <h4 className="workTime">Years: 2017- Current School Holidays (May-August & December) 2017-2021, May 2021- Current
-                                                </h4>
-                                                <h4 className="workDuties">Duties:</h4>
-                                                <ul className="workDutiesList">
-                                                    <li>Organize veterinary appointments, medications and at home care for 14 dogs</li>
-                                                    <li>In charge of food ordering for 14 dogs</li>
-                                                    <li>Helped to organize CEOs daily schedule, provided backup when things did not go as planned, assisted in barn cleaning and organization</li>
-                                                    <li>In charge of household cleaning, chores, groceries, meals, technical support, </li>
-                                                </ul>
-                                                <h4 className="workSLaD">Skills Learned and Demonstrated:</h4>
-                                                <ul className="workSLaDList">
-                                                    <li>Excellent communication and time management skills while managing a wide variety of tasks</li>
-                                                    <li>Collaborates with a variety of businesses while procuring different services </li>
-                                                    <li>Demonstrates compassion, critical thinking skills and problem solving skills simultaneously</li>
-                                                    <li>Demonstrates adaptability for multiple devices and strong technical literacy</li>
-                                                    <li>Demonstrates strong autonomy, organization, dependability, completion and reliability her required tasks</li>
-                                                </ul>
-                                            </div>
+                                                <div className="goatWork">
+                                                    <h4 className="workLocation">Executive Secretary | CU@LilRedBarn Goat Farm Inc. | 2011 - Current</h4>
+                                                
+                                                
+                                                    <h4 className="workDuties">Duties & Responsibilities:</h4>
+                                                        <ul className="workDutiesList">
+                                                            <li>Handled a diverse range of responsibilities, including administrative paperwork, landscaping, animal care, daily farm operations, garden and orchard maintenance, technical support, and domestic chores. </li>
+                                                            <li>Applied strong organizational skills and attention to detail to manage various responsibilities efficiently. </li>
+                                                            <li>Contributed significantly to the farm's operations and success through effective multitasking and problem-solving. </li>
+                                                    
+                                                        </ul>
+                                                    <h4 className="workSLaD">Key Accomplishments:</h4>
+                                                        <ul className="workSLaDList">
+                                                            <li>Played a crucial role in maintaining the smooth day to day operations of the farm. </li>
+                                                            <li>Organized care and feeding of 14 dogs at one time.</li>
+                                                            <li>Collaborated with other businesses to utilize their services. </li>
+                                                            <li>Assisted in providing excellent customer service and satisfaction.</li>
+                                                            <li>Successfully worked daily with family members, utilizing effective conflict resolution skills to maintain a harmonious working environment.</li>
+                                                        </ul>
+                                                </div>
+                                         </div>        
+                                        <div className="shortWork">
+                                            <h3 className="currentWorkHeader">Various Short Term Roles</h3>
+                                                <h4 className="shortRole">Certified Nursing Assistant | Bedford Hospital | 2017-2018</h4>
+                                                    <h5>Duties & Responsibilities</h5>
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    <h5>Key Accomplishments</h5>
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                <h4 className="shortRole"></h4>
+                                                    <h5>Duties & Responsibilities</h5>
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    <h5>Key Accomplishments</h5>
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                
+
+
                                         </div>
+                                       
+
                                         
                                         
                                     </div>
@@ -107,63 +133,16 @@ function Home() {
                                 <Tab title={"Education"} onClose={() => handleTabClose(index)}>
                                     <div>
                                         <h2 className="education" id="education">Education</h2>
+                                            <h3>Rutgers Full Stack Web Development BootCamp(Certificate Received) | New Brunswick, NJ </h3>
+                                                <h4>Intensive 13-week program focusing on industry-standard coding languages and software development.</h4>
 
-                                        <h3>Rutgers Full Stack Web Development BootCamp</h3>
-                                        <h4>Graduated March 6th 2024</h4>
-                                        <h5>Course Instruction Included:</h5>
-                                        <p>CSS, MERN, NOSQL, MySQL, JavaScript, Node.js, React, Express,js, jQuery</p>
-                                        <h5>Relevant Abilities and Experience Gained:</h5>
-                                        <ul>
-                                            <li>Utilization of: CSS, MERN, NOSQL, MySQL, JavaScript, Node.js, React, Express,js, jQuery</li>
-                                            <li>
-                                                Abreast of current online trends
-                                            </li>
-                                            <li>
-                                                Able to work independently on assigned tasks with self-disciple and time management
-                                            </li>
-                                        </ul>
-
-
-                                        <h3>Customs Brokers License 2023</h3>
-                                        <h4>Passed Brokers Licensing Exam October 2023</h4>
-                                        <h4>Course Instruction Included:</h4>
-                                        <p>19 CFR, ACE business rules and HTSUS classification</p>
-                                        <h4>Relevant Abilities and Experience Gained:</h4>
-                                        <ul>
-                                            <li>Familiarized with the 19 CFR, ACE business rules and HTSUS classifcation and book</li>
-                                            <li>Abreast of Duty Drawback</li>
-                                            <li>Learned self regulation time management and perseverance</li>
-                                            <li>Able to work independently and on assigned tasks</li>
-                                        </ul>
-
-                                        <h3>Bachelor of Science Exercise Physiology</h3>
-                                        <h4>Obtained from University of Lynchburg</h4>
-                                        <h4>Attended: August 2017 - June 2021</h4>
-                                        <h4>Graduated: May 2021</h4>
-                                        <h4>Relevant Course Work:</h4>
-                                        <p>Microsoft Office, specifically with Excel, and with Google Applications, statistics, ethics, writing </p>
-                                        <h4>Relevant Abilities and Experience Gained:</h4>
-                                        <ul>
-                                            <li>Excellent time management, team work, problem solving and organizational skills</li>
-                                            <li>Demonstrated dependable and accurate abilities in analysis, creative writing, scientific writing, data collection, information transfer, memory and basic mathematics</li>
-                                            <li>Exhibited interpersonal skills through communication (verbal and written) and conflict resolution</li>
-                                            <li>Voiced questions and concern for minority groups</li>
-                                            <li>Able to ask questions in a clear concise manner</li>
-                                        </ul>
-
-
-                                        <h3>Certified Nursing Assistant License</h3>
-                                        <h4>Obtained at: AllHeart CNA</h4>
-                                        <h4>Obtained June 2017</h4>
-                                        <h4>Relevant Course Work:</h4>
-                                        <p>Computer work</p>
-                                        <p>keeping track of tasks in a computer setting</p>
-                                        <h4>Relevant Abilities and Experience Gained:</h4>
-                                        <ul>
-                                            <li>Ability and experience in working with a team</li>
-                                            <li>Dependable</li>
-                                            <li>Willing to learn about and educate oneself on other groups and cultures</li>
-                                        </ul>
+                        
+                                            <h3>Customs Brokers License 2023 | Online | Passed Examination October 2023</h3>
+                                                <h4>An intensive program focused on imports and exports for the United States of America that culminated in the taking and passing of the Custom Brokers Licensing Examination in October 2023.</h4>
+                                       
+                            
+                                            <h3>University of Lynchburg | Bachelor of Science - Exercise Physiology | 2017 -2021 </h3>
+                                                <h4>A four-year program in Exercise Physiology offering a cutting-edge curriculum, small class sizes, and a focus on anatomy, physiology, and sciences. The program emphasizes analytical thinking, problem-solving, critical thinking, technical skills, and team collaboration, providing a comprehensive education. </h4>
                                     </div>
                                 </Tab>
 

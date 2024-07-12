@@ -20,7 +20,9 @@ function Portfolio() {
           </div>
         </div>
 
-        {/* <div className="projectGoats">
+      <h2>Projects In Progress</h2>
+
+        <div className="projectGoats">
           <div className="goatsBody">
             <div className="goatsInnerBody">
               <h2 className="goatsHeader">CU@LilRedBarn Nigerian Dwarf Dairy Goat Farm</h2>
@@ -30,7 +32,7 @@ function Portfolio() {
 
             <img src={goats} className="goatsImage" />
           </div>
-        </div> */}
+        </div>
 
 
 
