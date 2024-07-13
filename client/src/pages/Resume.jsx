@@ -1,182 +1,196 @@
-import { Tab, Tabs } from "../components"
-
 function Resume() {
+    const scrollToSection = (id) => {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    };
     return (
-        <div className="resumeMain">
+        <div className="resumeAll">
 
-<div className="tabsAll">
-                            <Tabs>
+            <div className="inPageLinks">
+                <button className="resumeLinkButton" onClick={() => scrollToSection('skills')}>Skills</button>
+                <button className="resumeLinkButton" onClick={() => scrollToSection('projects')} href="/Portfolio">Projects</button>
+                <button className="resumeLinkButton" onClick={() => scrollToSection('workExperience')}>Work Experience</button>
+                <button className="resumeLinkButton" onClick={() => scrollToSection('education')}>Education</button>
+                <button className="resumeLinkButton" onClick={() => scrollToSection('continuedEducation')}>Continuing Education</button>
+                <button className="resumeLinkButton" onClick={() => scrollToSection('travelExperience')}>Travel Experience</button>
+                <button className="resumeLinkButton" onClick={() => scrollToSection('languageSkills')}>Language Skills</button>
+                <button className="resumeLinkButton" onClick={() => scrollToSection('references')}>References</button>
+            </div>
 
-                                <Tab title={"Skills"} onClose={() => handleTabClose(index)}>
-                                    <div className="skillsSection">
-                                        <h2 className="skillsHeading" id="skills">Skills</h2>
-                                        <div className="resumeSkillsList">
-                                            <div className="skillBig">
-                                                <div className="skillMini">
-                                                    <h3 className="skillType">Technical Skills</h3>
-                                                    <p className="skillParagraph">
-                                                    Software Languages: JavaScript, HTML, CSS, PostgreSQL
-                                                    Tools: VS Code, Node.js, Express.js, Handlebars.js, Tailwind, Canvas, Bootstrap, React, Gitflow/Github, JSON, Wordpress, Adobe Photoshop
-                                                    Frameworks/Libraries: jQuery, Bootstrap, Materialize.
-                                                    Additional Skills: Responsive design principles, testing frameworks, Web design and Layout, API Integration, Google Suite, Microsoft Office, Computer Literacy          
+            <div className="resumeAllSections">
+                <section id="skills">
+                    <h2 className="sectionHeader">Skills</h2> 
+                        <h3 className="skillTypeSection">Transferable Skills</h3>
+                            <p className="skillInformation">Creative Problem Solving, Project Management, Client Relations, Effective Communication, Customer Satisfaction, Dependability, Creativity, Adaptability and Flexibility, Learning and Training Methodology, Time Management, Analytical Thinking, Decision Making, Team Collaboration, Ability to Work Independently or as a Team, Attention to Detail</p>
+                        <h3 className="skillTypeSection">Technical Skills</h3>
+                            <h4 className="technicalSkillType">Software Languages:</h4>
+                                <p className="skillInformation">JavaScript, HTML, CSS, PostgreSQL </p>
+                            <h4 className="technicalSkillType">Tools:</h4>
+                                <p className="skillInformation">VS Code, Node.js, Express.js, Handlebars.js, Tailwind, Canvas, Bootstrap, React, Gitflow/Github, JSON, Wordpress, Adobe Photoshop</p>
+                            <h4 className="technicalSkillType">Frameworks/Libraries:</h4>
+                                <p className="skillInformation">jQuery, Bootstrap, Materialize. </p>
+                            <h4 className="technicalSkillType">Additional:</h4>
+                                <p className="skillInformation">Responsive design principles, testing frameworks, Web design and Layout, API Integration, Google Suite, Microsoft Office, Computer Literacy </p>
+                </section>
 
-                                                    </p>
-                                                </div>
-
-                                                <div>
-                                                    <h3 className="skillType">Transferable Skills</h3>
-                                                    <p className="skillParagraph">
-                                                    Creative Problem Solving, Project Management, Client Relations, Effective Communication, Customer Satisfaction, Dependability, Creativity, Adaptability and Flexibility, Learning and Training Methodology, Time Management, Analytical Thinking, Decision Making, Team Collaboration, Ability to Work Independently or as a Team, Attention to Detail, Abreast of Current Online Trends
-                                                         </p>
-                                                </div>
-                                            </div>
-
-
-                                            <div className="skillBig">
-                                                <div className="skillMini">
-                                                    <h3 className="skillType">Logistics Skills</h3>
-                                                    <p className="skillParagraph">Familiar with ACE Business rules, HTSUS Classification, General Notes and 19 CFR. Passionate about logistics and working in the field of Duty Drawback</p>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Tab>
-
-
-
-                                <Tab title={"Work Experience"} onClose={() => handleTabClose(index)}>
-                                    <h2 className="workSectionHeader" id="workExperience">Work Experience</h2>
-
-                                    <div className="workSectionAll">
-
-                                        <div className="currentWork">
-                                            <h3 className="currentWorkHeader">Current Work</h3>
-                                                <div className="goatWork">
-                                                    <h4 className="workLocation">Executive Secretary | CU@LilRedBarn Goat Farm Inc. | 2011 - Current</h4>
-                                                
-                                                
-                                                    <h4 className="workDuties">Duties & Responsibilities:</h4>
-                                                        <ul className="workDutiesList">
-                                                            <li>Handled a diverse range of responsibilities, including administrative paperwork, landscaping, animal care, daily farm operations, garden and orchard maintenance, technical support, and domestic chores. </li>
-                                                            <li>Applied strong organizational skills and attention to detail to manage various responsibilities efficiently. </li>
-                                                            <li>Contributed significantly to the farm's operations and success through effective multitasking and problem-solving. </li>
-                                                    
-                                                        </ul>
-                                                    <h4 className="workSLaD">Key Accomplishments:</h4>
-                                                        <ul className="workSLaDList">
-                                                            <li>Played a crucial role in maintaining the smooth day to day operations of the farm. </li>
-                                                            <li>Organized care and feeding of 14 dogs at one time.</li>
-                                                            <li>Collaborated with other businesses to utilize their services. </li>
-                                                            <li>Assisted in providing excellent customer service and satisfaction.</li>
-                                                            <li>Successfully worked daily with family members, utilizing effective conflict resolution skills to maintain a harmonious working environment.</li>
-                                                        </ul>
-                                                </div>
-                                         </div>        
-                                        <div className="shortWork">
-                                            <h3 className="currentWorkHeader">Various Short Term Roles</h3>
-                                                <h4 className="shortRole">Certified Nursing Assistant | Bedford Hospital | 2017-2018</h4>
-                                                    <h5>Duties & Responsibilities</h5>
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                    <h5>Key Accomplishments</h5>
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                <h4 className="shortRole"></h4>
-                                                    <h5>Duties & Responsibilities</h5>
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                    <h5>Key Accomplishments</h5>
-                                                        <ul>
-                                                            <li></li>
-                                                        </ul>
-                                                
-
-
-                                        </div>
-                                       
-
-                                        
-                                        
-                                    </div>
-
-                                </Tab>
-
-
-
-                                <Tab title={"Education"} onClose={() => handleTabClose(index)}>
-                                    <div>
-                                        <h2 className="education" id="education">Education</h2>
-                                            <h3>Rutgers Full Stack Web Development BootCamp(Certificate Received) | New Brunswick, NJ </h3>
-                                                <h4>Intensive 13-week program focusing on industry-standard coding languages and software development.</h4>
-
+                
+                <section id="workExperience">
+                    <h2 className="sectionHeader">Work Experience</h2>
+                        <h3 className="workHeader">Executive Assistant (2011 - Present) </h3>
+                            <h4 className="workBusiness">CU@LilRedBarn Nigerian Dwarf Dairy Goat Farm, Muncie Indiana</h4>
+                                <p className="workDuties">Handled a diverse range of responsibilities, including administrative paperwork, landscaping, animal care, daily farm operations, garden and orchard maintenance, technical support, and domestic chores. </p>
+                                <p className="workDuties">Applied strong organizational skills and attention to detail to manage various responsibilities efficiently</p>
+                                <p className="workDuties">Contributed significantly to the farm's operations and success through effective multitasking and problem-solving.</p>
+                            <h5 className="keyAccomplishments">Key Accomplishments:</h5> 
+                                <p className="keyAccList">Played a crucial role in maintaining the smooth operations of the farm. </p>
+                                <p className="keyAccList">Demonstrated adaptability and versatility in handling both administrative and hands-on tasks.</p>
+                                <p className="keyAccList">Collaborated with other businesses to utilize their services. </p>
+                                <p className="keyAccList">Assisted in providing excellent customer service and satisfaction.</p>
                         
-                                            <h3>Customs Brokers License 2023 | Online | Passed Examination October 2023</h3>
-                                                <h4>An intensive program focused on imports and exports for the United States of America that culminated in the taking and passing of the Custom Brokers Licensing Examination in October 2023.</h4>
-                                       
-                            
-                                            <h3>University of Lynchburg | Bachelor of Science - Exercise Physiology | 2017 -2021 </h3>
-                                                <h4>A four-year program in Exercise Physiology offering a cutting-edge curriculum, small class sizes, and a focus on anatomy, physiology, and sciences. The program emphasizes analytical thinking, problem-solving, critical thinking, technical skills, and team collaboration, providing a comprehensive education. </h4>
-                                    </div>
-                                </Tab>
-
-
-                                <Tab title={"Volunteer Experience"} onClose={() => handleTabClose(index)}>
-                                    <div className="volunteerSection" id="volunteerExperience"></div>
-                                    <h1>Volunteer Experience</h1>
-                                    <h2>Location: Lynchburg Methodist Church</h2>
-                                      
-                                        <h3>Backpacking Lunch Program:</h3>
-                                            <h4>The Backpacking Lunch Program packed food for the weekend for those in food desserts. Lynchburg Methodist Church was linked to two local elementary schools. We received a list of from the school fo those who wished to participate in the program. Each Thursday we would pack grocery bags with enough food to get the individual families through the weekend.</h4>
-                                            <h4>When: September 2017 - April 2020</h4>
-                                                <h5>Stopped volunteering because program altered due to COVID</h5>
-                                            <h4>Relevant Skills:</h4>
-                                                <ul>
-                                                    <li>Awareness of the world around me</li>
-                                                    <li>Teamwork</li>
-                                                    <li>Increased compassion for others</li>
-                                                    <li>Commitment to a more caring world</li>
-                                                </ul>
-
-                                    <h2>United Methodist Women Group</h2>
-                                        <h3>When: September 2017 - Current</h3>
-                                        <h3>Activities:</h3>
-                                            <ul>
-                                                <li>Worked with the United Methodist Women's Group raise money to help educate families that want to become child advocates</li>
-                                                <li>Worked in the backpacking program</li>
-                                            </ul>
-
-
-                                </Tab>
-
-                                <Tab title={"Travel Experience"} onClose={() => handleTabClose(index)}>
-                                    <div className="travelSection" id="travelExperience">
-                                        <h2>Travel Experience 2021 - 2023</h2>
-                                        <h3>Switzerland, France, Australia, Netherlands, Liechtenstein, Germany, Belgium, Luxembourg, Portugal, 25 States of the United States of America</h3>
-                                        <h2>Life Travel Experience</h2>
-                                        <h3>Canada, 49 of the United States, Italy, Switzerland, France, Germany, Puerto Rico and five Caribbean Islands</h3>
-                                        <h2>Relevant Skills:</h2>
-                                        <ul>
-                                            <li>Ability to speak and read travel French, German and Spanish</li>
-                                            <li>Increased French, Spanish and German language skills</li>
-                                            <li>Respect for different cultures and people</li>
-                                            <li>Increased communication skills within many different cultures and with many of people</li>
-                                            <li>Time management skills</li>
-                                            <li>Perseverance: Keeps going even when things did not go as planned</li>
-                                            <li>Exceptional ability to adapt to changing circumstances and when things do not go as planned</li>
-                                            <li>Ability to face physical and mental challenges head on with laughter, imagination, creativity and strength</li>
-                                        </ul>
-                                    </div>
-                                </Tab>
-                               
-
-
-                            </Tabs>
+                            <h3 className="workHeader ">Various Short Term Roles</h3>
+                            <div className="variousRoles">
+                                <div className="shortRole">
+                                    <h4 className="shortTimeJobHeader">Certified Nursing Assistant (2018-2019)</h4>
+                                        <p className="workDuties"></p>
+                                        
+                                    <h5 className="keyAccomplishments">Key Accomplishments:</h5> 
+                                        <p className="keyAccList"></p>
+                                </div>
+                        
+                                <div className="shortRole">
+                                    <h4 className="shortTimeJobHeader">Service Champion (2017-2018)</h4>
+                                            <p className="workDuties"></p>
+                                        
+                                        <h5 className="keyAccomplishments">Key Accomplishments:</h5> 
+                                            <p className="keyAccList"></p>
+                                </div>
                         </div>
-        </div>
+                    </section>
+
+
+
+
+
+                <section id="education">
+                    <h2 className="sectionHeader">Education</h2>
+                        <h3 className="educationSubheader">Rutgers University Full-Stack Coding Certificate: New Brunswick, NJ (Completed) | 2023 - 2024</h3>
+                            <h4 className="educationWhen"></h4>
+                            <h4 className="educationWhat">Certificate in Full-Stack Web Development</h4>
+                            <h4 className="aboutEducation">Intensive 13-week program focusing on industry-standard coding languages and software development.</h4>
+
+                        <h3 className="educationSubheader">Customs Brokers Program: Online (Completed) | 2022 - 2023</h3>
+                            <h4 className="educationWhen"></h4>
+                            <h4 className="educationWhat">Customs Brokers License</h4>
+                            <h4 className="aboutEducation">An intensive program focused on imports and exports for the United States of America that culminated in the taking and passing of the Custom Brokers Licensing Examination in October 2023.</h4>
+
+                        <h3 className="educationSubheader">University of Lynchburg: Lynchburg Virginia (Graduated) | 2017 - 2021</h3>
+                            <h4 className="educationWhen"></h4>
+                            <h4 className="educationWhat">Bachelor of Science - Exercise Physiology</h4>
+                            <h4 className="aboutEducation">A four-year program in Exercise Physiology offering a cutting-edge curriculum, small class sizes, and a focus on anatomy, physiology, and sciences. The program emphasizes analytical thinking, problem-solving, critical thinking, technical skills, and team collaboration, providing a comprehensive education. </h4>
+                </section>
+
+
+                <section id="continuedEducation">
+                    <h2 className="sectionHeader">Continuing Education</h2>
+                        <h3 className="continueEducationLocation">Udemy</h3>
+                        <h3 className="continueEducationLocation">Rosetta Stone</h3>
+                </section>
+
+
+
+                <section id="travelExperience">
+                    <h2 className="sectionHeader"> Extensive Travel Experience</h2>
+                        <h3 className="travelYears">2021-2024</h3>
+                            <h4>States: Illinois, Montana, North Dakota, South Dakota, Wyoming, Missouri, Tennessee, FLorida, Georgia, Kentucky, Virginia, West Virginia, Ohio, Idaho, Washington State, Oregon, Hawaii</h4>
+                            <h4>Countries: Belgium, Germany, Portugal, Switzerland, Luxembourg, Liechtenstein, France, Netherlands, Austria </h4>
+                     
+                        <h3 className="travelYears">Before 2021</h3>
+                            <h4>States: Alabama, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington DC, West Virginia, Wisconsin, and Wyoming </h4>
+                            <h4>Commonwealths: Puerto Rico</h4>
+                            <h4>Countries: France, Germany, Switzerland, Italy, Canada, St. Lucia, Antigua</h4>
+                        <h3>Key Skills and Personal Growth:</h3>
+                            <ul>
+                                <li>Cultural Awareness and Sensitivity: Gained a deep understanding of diverse cultures and customs, enhancing my ability to work effectively in multicultural environments.</li>
+                                <li>Adaptability and Flexibility: Developed strong problem-solving skills and the ability to adapt quickly to new and changing environments.</li>
+                                <li>Independence and Self-Reliance: Demonstrated the ability to navigate unfamiliar situations independently and make informed decisions under pressure.</li>
+                                <li>Networking and Relationship Building: Established a global network of contacts and developed strong interpersonal skills through interactions with people from different walks of life.</li>
+                                <li>Improved proficiency in French, German, and Spanish, enhancing reading and writing skills in these languages.</li>
+                                <li>Communication Skills: Enhanced my ability to communicate clearly and effectively with people from various backgrounds.</li>
+                                <li>Global Perspective: Cultivated a broad perspective on global issues and trends, enriching my understanding of the world and my role within it.</li>
+                            </ul>
+                        
+                    <section id="languageSkills">
+                            <h2 className="sectionHeader">Languages</h2>
+                                <p>Elementary/Travel Proficiency in French, Spanish and German</p>    
+                    </section>   
+                </section>
+
+
+               
+
+
+                <section id="references">
+                    <h2 className="sectionHeader">References</h2>
+                        <h3 className="referenceName">JD Tadlock</h3>
+                            <ul className="aboutReference">
+                                <li className="referenceInformation">Email: </li>
+                                <li className="referenceInformation">Relationship: </li>
+                                <li className="referenceInformation">Known for 1 year</li>
+                            </ul>
+                        <h3 className="referenceName">Roma Warren</h3>
+                            <ul className="aboutReference">
+                                <li className="referenceInformation">Email: romawarren4710@gmail.com</li>
+                                <li className="referenceInformation">Phone Number: (765)–744–8581</li>
+                                <li className="referenceInformation">Relationship: Animal Care Liaison to CU@LilRedBarn for Boyce Animal Hospital</li>
+                                <li className="referenceInformation">Known for 20 years</li>
+                            </ul>
+                        <h3 className="referenceName">Charles Swayne</h3>
+                            <ul className="aboutReference">
+                                <li className="referenceInformation">Email: charles@jadepuma.com</li>
+                                <li className="referenceInformation">Relationship: Tutor/ Classmate at Rutgers University Full Stack Web Development Bootcamp</li>
+                                <li className="referenceInformation">Known for 1 year</li>
+                            </ul>
+                        <h3 className="referenceName">Faith Ross</h3>
+                            <ul className="aboutReference">
+                                <li className="referenceInformation">Email: faithross24@gmail.com </li>
+                                <li className="referenceInformation">Phone Number: (765)–748–4498</li>
+                                <li className="referenceInformation">Relationship: Animal Care Liaison to CU@LilRedBarn for Boyce Animal Hospital</li>
+                                <li className="referenceInformation">Known for 8 years</li>
+                            </ul>
+                        <h3 className="referenceName">Becky Siegler</h3>
+                            <ul className="aboutReference">
+                                <li className="referenceInformation">Phone Number: (434)–660–6067</li>
+                                <li className="referenceInformation">Relationship: Fellow member of the BackPackers Volunteer Program at Lynchburg Methodist Church</li>
+                                <li className="referenceInformation">Known for 8 years</li>
+                            </ul>
+                        <h3 className="referenceName">Angelica Vorderstrasse</h3>
+                            <ul className="aboutReference">
+                                <li className="referenceInformation">Email: romawarren4710@gmail.com</li>
+                                <li className="referenceInformation">Phone Number: (765)–744–8581</li>
+                                <li className="referenceInformation">Relationship: Mentor/Tutor for Customs Brokers License</li>
+                                <li className="referenceInformation">Known for 5 years</li>
+                            </ul>
+                        <h3 className="referenceName">Daniel Cassel</h3>
+                            <ul className="aboutReference">
+                                <li className="referenceInformation">Email: dscassel01@gmail.com</li>
+                                <li className="referenceInformation">Phone Number: (765)–730–4331</li>
+                                <li className="referenceInformation">Relationship: Executive Vice President of CU@LilRedBarn Goat Farm/ boss/ brother </li>
+                                <li className="referenceInformation">Known for 28 years</li>
+                            </ul>
+         
+                        <h3 className="referenceName">Margot Cassel</h3>
+                            <ul className="aboutReference">
+                                <li className="referenceInformation">Email: lilredbarn@hotmail.com</li>
+                                <li className="referenceInformation">Phone Number: (765)–730–0145</li>
+                                <li className="referenceInformation">Relationship: Executive of CU@LilRedBarn Goat Farm/ boss/ mom</li>
+                                <li className="referenceInformation">Known for 31 years</li>
+                            </ul>
+                    
+                </section>
+
+            </div>
+
+
+            </div>
     )
 }
 

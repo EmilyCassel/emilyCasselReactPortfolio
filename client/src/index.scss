@@ -131,13 +131,13 @@ main{
 .aboutMeGrouping{
   display: flex;
   flex-direction: row;
-  
 }
 
 .aboutMeHeader{
   display: flex;
   font-family: "Satisfy", cursive;
   font-size: 40px;
+  text-align: center;
 }
 
 .aboutMeParagraph{
@@ -147,6 +147,7 @@ main{
   padding-top: 0;
   margin-top: 0;
   position: inherit;
+  text-align: center;
 }
 
 .introductionAndLinkedIn{
@@ -160,6 +161,16 @@ main{
   flex-direction: column;
   justify-content: space-evenly;
   font-size: 22px;
+}
+
+.externalHomeLinks{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.githubLink{
+  padding-left: 25px;
 }
 
 // .resumeLink{
@@ -186,30 +197,6 @@ main{
 
 
 
-
-// .aboutMeInformation{
-//   display: flex;
-//   flex-direction: column;
-//   width: 100%;
-//   height: 100%;
-// }
-
-//aboutMeComponent
-// .aboutMePageHeader{
-//   display: flex;
-//   justify-content: center;
-//   font-family: "Satisfy", cursive;
-//   font-size: 50px;
-// }
-
-
-// .aboutMeParagraph{
-//   display: flex;
-//   justify-content: center;
-//   height: 100%;
-//   padding: 0 20px;
-//   font-size: 20px;
-// }
 
 
 
@@ -326,81 +313,91 @@ main{
 
 
 
-
-
-//Resume page
-.resumeLinks{
-  display: flex;
-  justify-content: space-between;
-  padding: 0 15px;
-}
-
-a{
-  color: #d66695;
-}
-
-
-.resumeHeadings{
+//Resume page 
+.resumeAll{
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
 }
 
-// .pSHeader{}
-
-// .pS{}
-
-.resumeSkillsList{
+.inPageLinks{
   display: flex;
-  flex-direction: row;
-}
-
-.skillsBig{
-  display: flex;
-}
-
-.skillMini{
-  display: flex;
-  flex-direction: column;
+  flex: row;
+  border: none;
   justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 25px;
 }
 
-// .workSectionHeader{}
+.resumeLinkButton{
+  color: rgb(81, 81, 81);
+}
+.sectionHeader{
+  display: flex;
+  flex: column; 
+  font-size: 250%;
+  font-weight: bold;
+}
 
-.workSectionAll{
+.skillTypeSection{
+  display: flex;
+  padding-left: 25px;
+  font-size: 200%;
+}
+
+.technicalSkillType{
+  display: flex;
+  padding-left: 35px;
+  font-size: 175%;
+}
+
+
+.skillInformation{
+  display: flex;
+  font-size: 150%;
+}
+
+
+
+.workHeader{
+  display: flex;
+  font-size: 200%;
+}
+
+.workBusiness{
+  display: flex;
+  font-size: 175%;
+}
+
+.shortTimeJobHeader{
+  display: flex;
+ flex-direction: row;
+}
+
+.workDuties{
+  display: flex;
+  font-size: 150%;
+}
+
+.keyAccomplishments{
+  display: flex;
+  font-size: 150%;
+}
+
+.keyAccList{
+  display: flex;
+  font-size: 150%;
+}
+
+.variousRoles{
   display: flex;
   flex-direction: row;
 }
 
-.travelSection{
-  display: flex;
-  padding-bottom: 400px;
-  flex-direction: column;
-}
-
-
-.tabs{
+.shortRole{
   display: flex;
   flex-direction: row;
-  .tab-button{
-    padding: 10px 20px;
-    background-color: #f0f0f0;
-    border: none;
-    border-bottom: 2px solid transparent;
-    cursor: pointer;
-    font-weight: normal;
-    margin-right: 8px;
-    transition: all 0.3s ease;
-  }
-
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -443,6 +440,29 @@ a{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // button {
 //   border-radius: 8px;
 //   border: 1px solid transparent;
@@ -458,23 +478,23 @@ a{
 
 
 // a {
-//   font-weight: 500;
-//   color: #840909;
-//   text-decoration: inherit;
+// //   font-weight: 500;
+// //   color: #840909;
+// //   text-decoration: inherit;
+// // }
+
+// a:hover {
+//   color: #000000;
 // }
 
-a:hover {
-  color: #000000;
-}
+// button:hover {
+//   border-color: #d66695;
+// }
 
-button:hover {
-  border-color: #d66695;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+// button:focus,
+// button:focus-visible {
+//   outline: 4px auto -webkit-focus-ring-color;
+// }
 
 
 
@@ -522,3 +542,61 @@ button:focus-visible {
 //     background-color: #f9f9f9;
 //   }
 // }
+.tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .tab-buttons {
+    display: flex;
+    margin-bottom: 1.5%;
+  
+  }
+
+  .tab-button {
+    padding: 10px 20px;
+    background-color: #d66695;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    font-weight: normal;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    font-size: 100%;
+    font-weight: bold;
+
+    &:hover {
+      background-color: blanchedalmond;
+    }
+
+    &.active {
+      font-weight: bold;
+      border-bottom: 2px solid #d66695;
+      background-color: blanchedalmond;
+    }
+  }
+
+  .tab-content {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .close-tab-button {
+    margin-top: 10px;
+    background-color: rgb(81, 81, 81);;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 100px;
+
+    &:hover {
+      background-color: #d66695;
+    }
+  }
+}

@@ -12,7 +12,8 @@ function Home() {
                         <img className="aboutMeImage" src={emilyCassel} alt="myPhoto" />
                     </div>
                     <div className="introductionAndLinkedIn">
-                        <h2 className="aboutMeHeader">About Me</h2>
+                        <h2 className="aboutMeHeader">About Me Summary</h2>
+                           
                             <p className="aboutMeParagraph">
                                 Versatile Full Stack Web Developer with comprehensive training from Rutgers University Coding Bootcamp, specializing in JavaScript, CSS, and UI/UX design and development. Adept at collaborating within Agile environments, delivering clean code, and communicating effectively. Dedicated to continuous learning and innovation in both front-end and back-end technologies.</p>
                             <p className="aboutMeParagraph">
@@ -24,10 +25,13 @@ function Home() {
                             <p className="aboutMeParagraph">
                                 I am eager to leverage my diverse skill set and passion for web development to pursue a career in full-stack JavaScript development.
                             </p>
+
+                        <div className="externalHomeLinks">
+                            <h2><a href="https://www.linkedin.com/in/emily-cassel-5a2980245/" target="_blank">LinkedIn</a></h2>
+                            <h2><a href="https://github.com/EmilyCassel" className="githubLink">Github</a></h2>
+                        </div>    
                     </div>
-                    <div className="linkedInLink">
-                        <h2><a href="https://www.linkedin.com/in/emily-cassel-5a2980245/" target="_blank">LinkedIn</a></h2>
-                    </div>
+                        
 
                     </div>
 
