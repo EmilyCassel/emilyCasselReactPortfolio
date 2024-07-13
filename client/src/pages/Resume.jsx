@@ -1,217 +1,181 @@
+import { Tab, Tabs } from "../components"
+
 function Resume() {
     return (
         <div className="resumeMain">
-            <div className="resumeLinks">
-                <h1 className="resumeSectionLink"><a href="#skills">Skills</a></h1>
-                <h1 className="resumeSectionLink"><a href="#education">Education</a></h1>
-                <h1 className="resumeSectionLink"><a href="#workExperience">Work Experience</a></h1>
-                <h1 className="resumeSectionLink"><a href="#travelExperience">Travel Experience</a></h1>
-            </div>
-            <div>
-                <h2 className="pSHeader">Professional Summary</h2>
-                <p className="pS">Highly dedicated, organized and hardworking professional with a diverse background and abilities. Demonstrates excellent problem-solving skills, analytical abilities and a computer literacy skills with a passion for quality performance in her work. Seeking to leverage these abilities in  Full-Stack Web Development.</p>
-            </div>
-            <div className="resumeHeadings">
-                <div className="skillsSection">
-                    <h2 className="skillsHeading" id="skills">Skills</h2>
-                    <div className="resumeSkillsList">
-                        <div className="skillBig">
-                            <div className="skillMini">
-                                <h3 className="skillType">Technical Skills</h3>
-                                <p className="skillParagraph">Proficiency in MS (Excel, Word, PowerPoint & Outlook), Google Application skills. Computer Literacy </p>
-                            </div>
 
-                            <div>
-                                <h3 className="skillType">Soft Skills</h3>
-                                <p className="skillParagraph">Strong problem solving skills, exceptional time management skills. Flexible and dependable in a teamwork centered and fast paced environment. Excellent ability to maintain confidentiality. Works with a phenomenal imagination and creativity. </p>
-                            </div>
-                        </div>
+<div className="tabsAll">
+                            <Tabs>
+
+                                <Tab title={"Skills"} onClose={() => handleTabClose(index)}>
+                                    <div className="skillsSection">
+                                        <h2 className="skillsHeading" id="skills">Skills</h2>
+                                        <div className="resumeSkillsList">
+                                            <div className="skillBig">
+                                                <div className="skillMini">
+                                                    <h3 className="skillType">Technical Skills</h3>
+                                                    <p className="skillParagraph">
+                                                    Software Languages: JavaScript, HTML, CSS, PostgreSQL
+                                                    Tools: VS Code, Node.js, Express.js, Handlebars.js, Tailwind, Canvas, Bootstrap, React, Gitflow/Github, JSON, Wordpress, Adobe Photoshop
+                                                    Frameworks/Libraries: jQuery, Bootstrap, Materialize.
+                                                    Additional Skills: Responsive design principles, testing frameworks, Web design and Layout, API Integration, Google Suite, Microsoft Office, Computer Literacy          
+
+                                                    </p>
+                                                </div>
+
+                                                <div>
+                                                    <h3 className="skillType">Transferable Skills</h3>
+                                                    <p className="skillParagraph">
+                                                    Creative Problem Solving, Project Management, Client Relations, Effective Communication, Customer Satisfaction, Dependability, Creativity, Adaptability and Flexibility, Learning and Training Methodology, Time Management, Analytical Thinking, Decision Making, Team Collaboration, Ability to Work Independently or as a Team, Attention to Detail, Abreast of Current Online Trends
+                                                         </p>
+                                                </div>
+                                            </div>
 
 
-                        <div className="skillBig">
-                            <div className="skillMini">
-                                <h3 className="skillType">Logistics Skills</h3>
-                                <p className="skillParagraph">Familiar with ACE Business rules, HTSUS Classification, General Notes and 19 CFR. Passionate about logistics and working in the field of Duty Drawback</p>
-                            </div>
+                                            <div className="skillBig">
+                                                <div className="skillMini">
+                                                    <h3 className="skillType">Logistics Skills</h3>
+                                                    <p className="skillParagraph">Familiar with ACE Business rules, HTSUS Classification, General Notes and 19 CFR. Passionate about logistics and working in the field of Duty Drawback</p>
+                                                </div>
 
-                            <div className="skillMini">
-                                <h3 className="skillType">Full Stack Web Development Skills</h3>
-                                <p className="skillParagraph">JavaScript, Node.js, Express.js, MERN, React, Flexbox, Bootstrap, inquirer, jQuery, Tailwind, Object-Oriented, Programming, Object-Related Mapping, NoSQL, MySQL, MERN, State, Model-View-Controller, Web API’s</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Tab>
 
-                <h2 className="workSectionHeader" id="workExperience">Work Experience</h2>
 
-                <div className="workSectionAll">
 
-                    <div className="currentWork">
-                        <h3 className="currentWorkHeader">Current</h3>
-                        <div className="goatWork">
-                            <h4 className="workLocation">Location: CU@LilRedBarn Goat Farm Inc. Muncie, IN</h4>
-                            <h4 className="workDescription">Housekeeper, Landscaper, Executive Secretary, Animal Caretaker</h4>
-                            <h4 className="workTime">Years: 2017- Current School Holidays (May-August & December) 2017-2021, May 2021- Current
-                            </h4>
-                            <h4 className="workDuties">Duties:</h4>
-                                <ul className="workDutiesList">
-                                    <li>Organize veterinary appointments, medications and at home care for 14 dogs</li>
-                                    <li>In charge of food ordering for 14 dogs</li>
-                                    <li>Helped to organize CEOs daily schedule, provided backup when things did not go as planned, assisted in barn cleaning and organization</li>
-                                    <li>In charge of household cleaning, chores, groceries, meals, technical support, </li>
-                                </ul>
-                            <h4 className="workSLaD">Skills Learned and Demonstrated:</h4>
-                            <ul className="workSLaDList">
-                                <li>Excellent communication and time management skills while managing a wide variety of tasks</li>
-                                <li>Collaborates with a variety of businesses while procuring different services </li>
-                                <li>Demonstrates compassion, critical thinking skills and problem solving skills simultaneously</li>
-                                <li>Demonstrates adaptability for multiple devices and strong technical literacy</li>
-                                <li>Demonstrates strong autonomy, organization, dependability, completion and reliability her required tasks</li>
-                            </ul>
-                        </div>
-                    </div>
-                        <div>
-                            <h3 className="previousWorkHeader">Previous</h3>
-                            <div className="otherWork">
-                                <div className="hospitalWork">
-                                    <h4 className="workLocation">Location: Bedford Hospital Bedford, VA</h4>
-                                    <h4 lassName="workDescription">Certified Nursing Assistant</h4>
-                                    <h4 className="workTime">When: December 2018-June 2019</h4>
-                                    <h4 className="workDuties">Duties:</h4>
-                                        <ul className="workDutiesList"> 
-                                            <li>Assisted patients in their daily life tasks such as eating, changing and baths</li>
-                                            <li>Was king and compassionate to patients taking time to learn their names and talk to them</li>
-                                            <li>Changed bedding and sheets</li>
-                                            <li>Charted daily activities accurately in an accurate time frame</li>
+                                <Tab title={"Work Experience"} onClose={() => handleTabClose(index)}>
+                                    <h2 className="workSectionHeader" id="workExperience">Work Experience</h2>
+
+                                    <div className="workSectionAll">
+
+                                        <div className="currentWork">
+                                            <h3 className="currentWorkHeader">Current Work</h3>
+                                                <div className="goatWork">
+                                                    <h4 className="workLocation">Executive Secretary | CU@LilRedBarn Goat Farm Inc. | 2011 - Current</h4>
+                                                
+                                                
+                                                    <h4 className="workDuties">Duties & Responsibilities:</h4>
+                                                        <ul className="workDutiesList">
+                                                            <li>Handled a diverse range of responsibilities, including administrative paperwork, landscaping, animal care, daily farm operations, garden and orchard maintenance, technical support, and domestic chores. </li>
+                                                            <li>Applied strong organizational skills and attention to detail to manage various responsibilities efficiently. </li>
+                                                            <li>Contributed significantly to the farm's operations and success through effective multitasking and problem-solving. </li>
+                                                    
+                                                        </ul>
+                                                    <h4 className="workSLaD">Key Accomplishments:</h4>
+                                                        <ul className="workSLaDList">
+                                                            <li>Played a crucial role in maintaining the smooth day to day operations of the farm. </li>
+                                                            <li>Organized care and feeding of 14 dogs at one time.</li>
+                                                            <li>Collaborated with other businesses to utilize their services. </li>
+                                                            <li>Assisted in providing excellent customer service and satisfaction.</li>
+                                                            <li>Successfully worked daily with family members, utilizing effective conflict resolution skills to maintain a harmonious working environment.</li>
+                                                        </ul>
+                                                </div>
+                                         </div>        
+                                        <div className="shortWork">
+                                            <h3 className="currentWorkHeader">Various Short Term Roles</h3>
+                                                <h4 className="shortRole">Certified Nursing Assistant | Bedford Hospital | 2017-2018</h4>
+                                                    <h5>Duties & Responsibilities</h5>
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    <h5>Key Accomplishments</h5>
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                <h4 className="shortRole"></h4>
+                                                    <h5>Duties & Responsibilities</h5>
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                    <h5>Key Accomplishments</h5>
+                                                        <ul>
+                                                            <li></li>
+                                                        </ul>
+                                                
+
+
+                                        </div>
+                                       
+
+                                        
+                                        
+                                    </div>
+
+                                </Tab>
+
+
+
+                                <Tab title={"Education"} onClose={() => handleTabClose(index)}>
+                                    <div>
+                                        <h2 className="education" id="education">Education</h2>
+                                            <h3>Rutgers Full Stack Web Development BootCamp(Certificate Received) | New Brunswick, NJ </h3>
+                                                <h4>Intensive 13-week program focusing on industry-standard coding languages and software development.</h4>
+
+                        
+                                            <h3>Customs Brokers License 2023 | Online | Passed Examination October 2023</h3>
+                                                <h4>An intensive program focused on imports and exports for the United States of America that culminated in the taking and passing of the Custom Brokers Licensing Examination in October 2023.</h4>
+                                       
+                            
+                                            <h3>University of Lynchburg | Bachelor of Science - Exercise Physiology | 2017 -2021 </h3>
+                                                <h4>A four-year program in Exercise Physiology offering a cutting-edge curriculum, small class sizes, and a focus on anatomy, physiology, and sciences. The program emphasizes analytical thinking, problem-solving, critical thinking, technical skills, and team collaboration, providing a comprehensive education. </h4>
+                                    </div>
+                                </Tab>
+
+
+                                <Tab title={"Volunteer Experience"} onClose={() => handleTabClose(index)}>
+                                    <div className="volunteerSection" id="volunteerExperience"></div>
+                                    <h1>Volunteer Experience</h1>
+                                    <h2>Location: Lynchburg Methodist Church</h2>
+                                      
+                                        <h3>Backpacking Lunch Program:</h3>
+                                            <h4>The Backpacking Lunch Program packed food for the weekend for those in food desserts. Lynchburg Methodist Church was linked to two local elementary schools. We received a list of from the school fo those who wished to participate in the program. Each Thursday we would pack grocery bags with enough food to get the individual families through the weekend.</h4>
+                                            <h4>When: September 2017 - April 2020</h4>
+                                                <h5>Stopped volunteering because program altered due to COVID</h5>
+                                            <h4>Relevant Skills:</h4>
+                                                <ul>
+                                                    <li>Awareness of the world around me</li>
+                                                    <li>Teamwork</li>
+                                                    <li>Increased compassion for others</li>
+                                                    <li>Commitment to a more caring world</li>
+                                                </ul>
+
+                                    <h2>United Methodist Women Group</h2>
+                                        <h3>When: September 2017 - Current</h3>
+                                        <h3>Activities:</h3>
+                                            <ul>
+                                                <li>Worked with the United Methodist Women's Group raise money to help educate families that want to become child advocates</li>
+                                                <li>Worked in the backpacking program</li>
+                                            </ul>
+
+
+                                </Tab>
+
+                                <Tab title={"Travel Experience"} onClose={() => handleTabClose(index)}>
+                                    <div className="travelSection" id="travelExperience">
+                                        <h2>Travel Experience 2021 - 2023</h2>
+                                        <h3>Switzerland, France, Australia, Netherlands, Liechtenstein, Germany, Belgium, Luxembourg, Portugal, 25 States of the United States of America</h3>
+                                        <h2>Life Travel Experience</h2>
+                                        <h3>Canada, 49 of the United States, Italy, Switzerland, France, Germany, Puerto Rico and five Caribbean Islands</h3>
+                                        <h2>Relevant Skills:</h2>
+                                        <ul>
+                                            <li>Ability to speak and read travel French, German and Spanish</li>
+                                            <li>Increased French, Spanish and German language skills</li>
+                                            <li>Respect for different cultures and people</li>
+                                            <li>Increased communication skills within many different cultures and with many of people</li>
+                                            <li>Time management skills</li>
+                                            <li>Perseverance: Keeps going even when things did not go as planned</li>
+                                            <li>Exceptional ability to adapt to changing circumstances and when things do not go as planned</li>
+                                            <li>Ability to face physical and mental challenges head on with laughter, imagination, creativity and strength</li>
                                         </ul>
+                                    </div>
+                                </Tab>
+                               
 
-                                    <h4 className="workSLaD">Skills Learned and Demonstrated:</h4>
-                                        <ul className="workSLaDList">
-                                            <li>Compatible with many different groups of people and personalities </li>
-                                            <li>Accomplished and dependable in teamwork and collaborative efforts </li>
-                                            <li>Able to adjust to a changing and fast paced environments quickly and with ease</li>
-                                            <li>Kept up to date on newest information and techniques</li>
-                                            <li>Completed tasks in a timely and correct manner</li>
-                                        </ul>
-                                </div>
-                                <div className="hospitalWork">
-                                    <h4 className="workLocation">Location: Petsmart Lynchburg, VA</h4>
-                                    <h4 lassName="workDescription">Service Champion</h4>
-                                    <h4 className="workTime">When: October 2017- April 2018</h4>
-                                    <h4 className="workDuties">Duties:</h4>
-                                        <ul className="workDutiesList"> 
-                                            <li>Provided accurate information to customers in a professional and helpful manner</li>
-                                            <li>Worked the register quickly and competently with knowledge or what was in the store</li>
-                                            <li></li>
-                                        </ul>
-                                    <h4 className="workSLaD">Skills Learned and Demonstrated:</h4>
-                                        <ul className="workSLaDList">
-                                            <li>Gained familiarity with repeat customers, learning names of pets and owners</li>
-                                            <li>Professional and capable in dealing with different groups of people and their interests</li>
-                                            <li>Utilized and strengthened teamwork and organizational skills </li>
-                                            <li>Displays ability to resolve conflicts quickly and calmly</li>
-                                        </ul>
-                                </div>
-                            </div>
+
+                            </Tabs>
                         </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-                <div>
-                    <h2 className="education" id="education">Education</h2>
-
-                    <h3>Rutgers Full Stack Web Development BootCamp</h3>
-                    <h4>Graduated March 6th 2024</h4>
-                    <h5>Course Instruction Included:</h5>
-                    <p>CSS, MERN, NOSQL, MySQL, JavaScript, Node.js, React, Express,js, jQuery</p>
-                    <h5>Relevant Abilities and Experience Gained:</h5>
-                    <ul>
-                        <li>Utilization of: CSS, MERN, NOSQL, MySQL, JavaScript, Node.js, React, Express,js, jQuery</li>
-                        <li>
-                            Abreast of current online trends
-                        </li>
-                        <li>
-                            Able to work independently on assigned tasks with self-disciple and time management
-                        </li>
-                    </ul>
-
-
-                    <h3>Customs Brokers License 2023</h3>
-                    <h4>Passed Brokers Licensing Exam October 2023</h4>
-                    <h4>Course Instruction Included:</h4>
-                    <p>19 CFR, ACE business rules and HTSUS classification</p>
-                    <h4>Relevant Abilities and Experience Gained:</h4>
-                    <ul>
-                        <li>Familiarized with the 19 CFR, ACE business rules and HTSUS classifcation and book</li>
-                        <li>Abreast of Duty Drawback</li>
-                        <li>Learned self regulation time management and perseverance</li>
-                        <li>Able to work independently and on assigned tasks</li>
-                    </ul>
-
-                    <h3>Bachelor of Science Exercise Physiology</h3>
-                    <h4>Obtained from University of Lynchburg</h4>
-                    <h4>Attended: August 2017 - June 2021</h4>
-                    <h4>Graduated: May 2021</h4>
-                    <h4>Relevant Course Work:</h4>
-                    <p>Microsoft Office, specifically with Excel, and with Google Applications, statistics, ethics, writing </p>
-                    <h4>Relevant Abilities and Experience Gained:</h4>
-                    <ul>
-                        <li>Excellent time management, team work, problem solving and organizational skills</li>
-                        <li>Demonstrated dependable and accurate abilities in analysis, creative writing, scientific writing, data collection, information transfer, memory and basic mathematics</li>
-                        <li>Exhibited interpersonal skills through communication (verbal and written) and conflict resolution</li>
-                        <li>Voiced questions and concern for minority groups</li>
-                        <li>Able to ask questions in a clear concise manner</li>
-                    </ul>
-
-
-                    <h3>Certified Nursing Assistant License</h3>
-                    <h4>Obtained at: AllHeart CNA</h4>
-                    <h4>Obtained June 2017</h4>
-                    <h4>Relevant Course Work:</h4>
-                    <p>Computer work</p>
-                    <p>keeping track of tasks in a computer setting</p>
-                    <h4>Relevant Abilities and Experience Gained:</h4>
-                    <ul>
-                        <li>Ability and experience in working with a team</li>
-                        <li>Dependable</li>
-                        <li>Willing to learn about and educate oneself on other groups and cultures</li>
-                    </ul>
-                </div>
-
-
-                <div className="travelSection" id="travelExperience">
-                    <h2>Travel Experience</h2>
-                    <h3>Travel Experience 2021 - 2023</h3>
-                    <h4>Switzerland, France, Australia, Netherlands, Liechtenstein, Germany, Belgium, Luxembourg, Portugal, 25 States of the United States of America</h4>
-                    <h3>Life Travel Experience</h3>
-                    <h4>Canada, 49 of the United States, Italy, Switzerland, France, Germany, Puerto Rico and five Caribbean Islands</h4>
-                    <h3>Relevant Skills:</h3>
-                    <ul>
-                        <li>Ability to speak and read travel French, German and Spanish</li>
-                        <li>Increased French, Spanish and German language skills</li>
-                        <li>Respect for different cultures and people</li>
-                        <li>Increased communication skills within many different cultures and with many of people</li>
-                        <li>Time management skills</li>
-                        <li>Perseverance: Keeps going even when things did not go as planned</li>
-                        <li>Exceptional ability to adapt to changing circumstances and when things do not go as planned</li>
-                        <li>Ability to face physical and mental challenges head on with laughter, imagination, creativity and strength</li>
-                    </ul>
-                </div>
-
-
-
-
-
-
-
-            </div>
         </div>
     )
 }

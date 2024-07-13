@@ -5,7 +5,7 @@ import goats from "../assets/images/goats.png"
 function Portfolio() {
   return (
     <div>
-      <h1 className="portfolioHeader">My Projects</h1>
+      <h1 className="portfolioHeader">Completed Projects</h1>
 
       <body className="portfolioList">
 
