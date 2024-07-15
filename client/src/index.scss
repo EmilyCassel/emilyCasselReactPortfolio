@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
 
 
+
+//  #d66695;
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: baskervville-sc-regular;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #d66695;
-  background-color: blanchedalmond;
+  background-color: rgb(206, 204, 204);
+  
+
+
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,574 +34,568 @@ main{
 
 
 
-//components
-.header {
+
+
+
+
+
+
+
+
+
+//header 
+.header{
   display: flex;
+  background-color: rgb(174, 82, 102);
+  // background-color: rgb(62, 62, 65);
   flex-direction: row;
-  align-items: center;
-  min-width: 0px;
-  width: 100%;
-  padding-bottom: 10px;
-  padding-top: 25px;
-  margin: 0;
-  text-decoration: inherit;
   justify-content: space-between;
-  background-color: rgb(81, 81, 81);
+  padding-top: 3px;
+  margin: 0;
 }
 
-.myName {
-  font-size: 85px;
-  font-family: "Satisfy", cursive;
-  color: #d66695;
-  padding-left: 47px;
-  padding-bottom: 0;
-  padding-top: 0;
+.myName{
+  display: flex;
+  color: pink;
+  padding-left: 20px;
+  font-size: 150%;
   margin: 0;
+  padding: 1px 0px 0px 20px;
 }
 
 .homePageLinks{
   display: flex;
-  padding-right: 30px;
-  padding-bottom: 0;
+  flex-direction: row;
+  padding: 1px 0px 0px 0px;
   margin: 0;
 }
 
 .mainLink{
-  font-size: 65px;
-  font-family: "Satisfy", cursive;
-  color: #d66695;
-  padding: 0 25px;
-}
-
-
-//fix problem with footer
-.footer{
-  position: fixed;
-  text-align: center;
-  min-width: 0px;
-  width: 100%;
-  padding: 10px 10px;
-  text-decoration: inherit;
-  background-color: rgb(81, 81, 81);
-  color: #d66695;
-  position: fixed;
-  padding-bottom: 0%;
-  bottom: 0;
-}
-
-
-
-
-
-
-//home/aboutMe
-.aboutMe{
   display: flex;
-  // width: 100%;
-  padding-top: 20px;
-  // height: 100%;
-  // justify-content: space-around;
-}
-
-.aboutMeImageResume{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-right: 0;
-  padding-right: 0;
-}
-
-.imageContainer {
-  width: 100%;
-  height: 100%;
-  padding: 14px;
-  padding-bottom: 5%;
-  box-sizing: border-box;
-
-  .aboutMeImage {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; 
-  }
-}
-
-
-
-
-.homeMeAll{
-  display: flex;
-  flex-direction: column;
-}
-
-.aboutMeGrouping{
-  display: flex;
-  flex-direction: row;
-}
-
-.aboutMeHeader{
-  display: flex;
-  font-family: "Satisfy", cursive;
-  font-size: 40px;
-  text-align: center;
-}
-
-.aboutMeParagraph{
-  display: flex;
-  align-items: flex-end;
-  font-size: 22px;
-  padding-top: 0;
-  margin-top: 0;
-  position: inherit;
-  text-align: center;
-}
-
-.introductionAndLinkedIn{
-  display: flex;
-  flex-direction: column;
-  padding: 0 15px;
-}
-
-.aboutMeLinks{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  font-size: 22px;
-}
-
-.externalHomeLinks{
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-
-.githubLink{
-  padding-left: 25px;
-}
-
-// .resumeLink{
-//   display: flex;
-
-//   font-family: "Satisfy", cursive;
-//   color: #d66695;
-// }
-
-.linkedInLink{
-  display: flex;
-  font-family: "Satisfy", cursive;
-  color: #d66695;
-  font-size: 30px;
-}
-
-.tabsAll{
-  display: flex;
-  padding-bottom: 100px;
-  padding-top: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-//PortfolioPage 
-
-.portfolioHeader{
-  display: flex;
-  justify-content: center;
-  font-size: 350%;
-  padding-bottom: 50px;
-  margin-bottom: 0;
-  font-family: "Satisfy", cursive;
-}
-
-
-
-//freeLancer
-.projectFreeLancer{
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 10%;
-  font-family: MedievalSharp;
-  color: #860303;
-}
-
-.freeLancerHeader{
-  padding-left: 10px;
-  font-size: 250%;
-  font-family: MedievalSharp;
-  color: #860303;
-}
-
-.freeLancerBody{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
- 
-}
-
-.freeLancerInnerBody{
-  display: flex;
-  flex-direction: column;
-}
-
-.freeLancerParagraph{
-  padding-left: 10px;
-  font-size: 200%;
-  margin: 0;
-  padding-right: 10px;
-}
-
-
-.freeLancerLink{
-  padding-left: 20px;
+  color: bisque;
+  padding-left: 15px;
   font-size: 150%;
-  color: #860303;
-}
-
-.freeLancerImage{
-  width: 45%;
-  padding-right: 10px;
-}
-
-//goats
-.projectGoats{
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 10%;
-  font-family: serif;
-}
-
-.goatsHeader{
-  padding-left: 10px;
-  font-size: 250%;
-  color: rgb(173, 13, 13);
-}
-
-.goatsBody{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.goatsInnerBody{
-  display: flex;
-  flex-direction: column;
-}
-
-.goatsParagraph{
-  padding-left: 10px;
-  font-size: 200%;
   margin: 0;
-  padding-right: 10px;
-  color:rgb(173, 13, 13);
+  padding-bottom: 0;
+  padding-right: 20px;
+
 }
 
 
-.goatsLink{
+
+
+
+
+
+
+
+
+//Home Page
+.homeIntro{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 7%;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.introName{
+  font-size: 425%;
+  margin: 0;
+  color: rgb(177, 38, 98);
+  // color: rgb(194, 87, 110);
+}
+
+.introLines{
+  font-size: 250%;
   padding-left: 20px;
-  font-size: 150%;
-  color: rgb(173, 13, 13);
-}
-
-.goatsImage{
-  width: 45%;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 
 
 
-//Resume page 
+
+
+
+
+
+
+//Resume
+
 .resumeAll{
   display: flex;
   flex-direction: column;
   padding-left: 10px;
+  padding-right: 100px;
+ 
 }
 
 .inPageLinks{
   display: flex;
-  flex: row;
-  border: none;
-  justify-content: space-around;
-  padding-top: 40px;
-  padding-bottom: 25px;
+  justify-content: center;
+  padding-left: 10px;
+  flex-direction: column;
+  
+}
+
+.fourLinksOne{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourLinksTwo{
+  display: flex;
+  justify-content: space-between;
 }
 
 .resumeLinkButton{
-  color: rgb(81, 81, 81);
+  border: 0cap;
+  background-color:rgb(206, 204, 204);
+  width: 150px;
+  font-size: 150%;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
+
+
+.resumeAllSections{
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+}
+
+hr{
+  border: none; 
+  border-top: 2px solid #c9647a; 
+  margin: 20px 0; 
+}
+
+
+//Skills
 .sectionHeader{
   display: flex;
-  flex: column; 
-  font-size: 250%;
-  font-weight: bold;
+  font-size: 300%;
+  padding: 15px 0 10px 10px;
+  margin: 0;
+  text-decoration: underline;
+
 }
 
 .skillTypeSection{
   display: flex;
-  padding-left: 25px;
-  font-size: 200%;
+  font-size: 225%;
+  padding: 10px 0 7px 20px;
+  margin: 0;
 }
 
 .technicalSkillType{
   display: flex;
-  padding-left: 35px;
-  font-size: 175%;
+  font-size: 140%;
+  padding: 7px 0 7px 25px;
+  margin: 0;
 }
-
 
 .skillInformation{
   display: flex;
-  font-size: 150%;
+  font-size: 140%;
+  padding: 1px 0 2px 35px;
+  margin: 0;
 }
 
+//Work Experience 
 
 
 .workHeader{
   display: flex;
-  font-size: 200%;
+  font-size: 225%;
+  padding: 10px 0 7px 20px;
+  margin: 0;
 }
+
 
 .workBusiness{
   display: flex;
-  font-size: 175%;
+  font-size: 140%;
+  padding: 7px 0 7px 25px;
+  margin: 0;
 }
 
-.shortTimeJobHeader{
-  display: flex;
- flex-direction: row;
-}
-
-.workDuties{
-  display: flex;
-  font-size: 150%;
-}
 
 .keyAccomplishments{
   display: flex;
-  font-size: 150%;
-}
-
-.keyAccList{
-  display: flex;
-  font-size: 150%;
-}
-
-.variousRoles{
-  display: flex;
-  flex-direction: row;
-}
-
-.shortRole{
-  display: flex;
-  flex-direction: row;
+  font-size: 140%;
+  padding: 3px 0 2px 35px;
+  margin: 0;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-//Contact Page
-.allContact{
+.dutiesKey{
   display: flex;
+  font-size: 125%;
+  padding: 5px 0 5px 60px;
+  margin: 0;
+
+  &::before {
+    content: '•'; 
+    position: absolute;
+    left: 58px;
+    font-size: 1.5em; 
+    line-height: 0.8; 
+  }
+}
+
+
+
+
+
+
+
+
+.variousHeader{
+  display: flex;
+  font-size: 175%;
+  padding: 25px 0 7px 15px;
+  margin: 0;
   flex-direction: column;
-  align-items: center;
-
 }
 
-.pleaseContact{
-  font-size: 350%;
-  padding: 20px;
-
-}
-
-.singleBody{
-  padding:15px;
-  font-size: 250%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// button {
-//   border-radius: 8px;
-//   border: 1px solid transparent;
-//   padding: 0.6em 1.2em;
-//   font-size: 1em;
-//   font-weight: 500;
-//   font-family: inherit;
-//   background-color: #1a1a1a;
-//   cursor: pointer;
-//   transition: border-color 0.25s;
-// }
-
-
-
-// a {
-// //   font-weight: 500;
-// //   color: #840909;
-// //   text-decoration: inherit;
-// // }
-
-// a:hover {
-//   color: #000000;
-// }
-
-// button:hover {
-//   border-color: #d66695;
-// }
-
-// button:focus,
-// button:focus-visible {
-//   outline: 4px auto -webkit-focus-ring-color;
-// }
-
-
-
-@media only screen and (max-width: 480px) {
-  .aboutMeGrouping{
-    flex-direction: column;
-  } 
-  .header{
-    flex-direction: column;
-  }
-  .homePageLinks{
-    flex-direction: column;
-  }
-  .freeLancerBody{
-    flex-direction: column;
-  }
-  .freeLancerImage{
-    width: auto;
-  }
-  .goatsBody{
-    flex-direction: column;
-  }
-  .goatsImage{
-    width: auto;
-  }
-  .tabsAll{
-    flex-direction: column;
-
-  }
-}
-
-//tablets 768px 
-
-// @media (prefers-color-scheme: light) {
-//   :root {
-//     color: #213547;
-//     background-color: #ffffff;
-//   }
-
-//   a:hover {
-//     color: #747bff;
-//   }
-
-//   button {
-//     background-color: #f9f9f9;
-//   }
-// }
-.tabs {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  .tab-buttons {
+.shortTimeJobHeader{
     display: flex;
-    margin-bottom: 1.5%;
-  
-  }
+    font-size: 150%;
+    padding: 2px 0 3px 30px;
+    margin: 0;
+}
 
-  .tab-button {
-    padding: 10px 20px;
-    background-color: #d66695;
-    border: none;
-    border-bottom: 2px solid transparent;
-    cursor: pointer;
-    font-weight: normal;
-    margin-right: 8px;
-    transition: all 0.3s ease;
-    border-radius: 2px;
-    font-size: 100%;
-    font-weight: bold;
+.shortKeyAccomplishments{
+  display: flex;
+  font-size: 135%;
+  padding: 2px 0 0px 40px;
+  margin: 0;
+}
 
-    &:hover {
-      background-color: blanchedalmond;
-    }
 
-    &.active {
-      font-weight: bold;
-      border-bottom: 2px solid #d66695;
-      background-color: blanchedalmond;
-    }
-  }
+.shortKeyDuties{
+  display: flex;
+  font-size: 100%;
+  padding: 2px 0 0px 50px;
+  margin: 0;
+}
 
-  .tab-content {
-    display: none;
 
-    &.active {
-      display: block;
-    }
-  }
+//education 
+.educationSchool{
+    display: flex;
+    font-size: 225%;
+    padding: 1px 0 2px 20px;
+    margin: 0;
+}
 
-  .close-tab-button {
-    margin-top: 10px;
-    background-color: rgb(81, 81, 81);;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 100px;
+.educationWhat{
+  display: flex;
+  font-size: 200%;
+  padding: 3px 0 1px 35px;
+  margin: 0;
+}
 
-    &:hover {
-      background-color: #d66695;
-    }
+.aboutEducation{
+  display: flex;
+  font-size: 150%;
+  padding: 3px 0 40px 50px;
+  margin: 0;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+//travel experience 
+
+
+
+
+.travelSectionHeader{
+  display: flex;
+  font-size: 225%;
+  padding: 25px 0 7px 20px;
+  margin: 0;
+  font-weight: 150px;
+}
+
+.travelLocations{
+display: flex;
+font-size: 175%;
+padding: 1px 0 1px 45px;
+margin: 0;
+font-weight: normal;
+  &::before {
+    content: '•'; 
+    position: absolute;
+    left: 43px;
+    font-size: 1em; 
+    line-height: 1.4; 
   }
 }
+
+.travelList{
+  display: flex;
+  flex-direction: column;
+  font-size: 170%;
+  padding: 10px 0 44px 50px;
+  margin: 0;
+  font-weight: normal;
+}
+
+
+.line{
+  border: none; 
+  border-top: 1px solid #c9647a; 
+  margin: 0px 1000px 10px 10px; 
+}
+
+.languageHeader{
+  display: flex;
+  font-size: 225%;
+  padding: 10px 0 2px 20px;
+  margin: 0;
+  font-weight: 150px;
+}
+
+
+
+
+.languageList{
+  display: flex;
+  flex-direction: column;
+  font-size: 150%;
+  padding: 10px 0 10px 50px;
+  margin: 0;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+//references
+.allReferences {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  padding: 1px; 
+ 
+}
+
+.referenceSection {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  gap: 20px; 
+  
+}
+
+
+
+
+.referenceEach {
+  padding: 20px 10px 20px 10px; 
+  flex: 1; 
+}
+
+
+.referenceName{
+  margin: 0;
+  font-size: 175%;
+  padding-top: 0;
+  margin: 0;
+  position: relative;
+  padding-left: 3px;
+}
+
+.referenceName::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -4px;
+  width: 2px;
+  background-color: #000; /* Change this color to whatever you prefer */
+}
+
+
+.aboutReference {
+  list-style-type: disc; 
+  padding-left: 20px; 
+}
+
+.aboutReference li {
+  margin-left: 30px; 
+  padding-left: 1px; 
+}
+
+
+.referenceInformation{
+  margin: 0;
+  padding: 0px 20px 0px 10px; 
+  font-size: 125%;
+}
+
+
+.blank{
+  padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+.allProject{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.projectsHeader{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.projectBody{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.projectInformation{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.projectImage{
+  display: flex;
+  justify-content: right;
+  height: 10px;
+  width: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//footer
+.footer{
+  display: flex;
+  background-color: rgb(62, 62, 65);
+  // background-color: rgb(211, 116, 137);
+  flex-direction: row;
+  justify-content: center;
+  color: bisque;
+  font-size: 125%;
+  padding: 0;
+  margin: 0;
+}
+
+
+//home page 
+
+
+
+
+
+
+
+
