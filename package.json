@@ -1,3 +1,4 @@
+
 {
   "name": "emilycasselportfolio",
   "version": "1.0.0",
@@ -6,9 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"cd ./server && npm run watch\" \"cd ./client && npm run dev\"",
-    "start": "cd ./server && npm i && npm run start"
-
-  
+    "build": "cd ./client && npm run build",
+    "start": "node server/server.js"
   },
   "keywords": [],
   "author": "",
