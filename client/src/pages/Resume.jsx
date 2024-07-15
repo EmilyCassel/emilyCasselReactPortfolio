@@ -64,18 +64,18 @@ function Resume() {
 
                     <div className="shortRole">
                         <h4 className="shortTimeJobHeader">Certified Nursing Assistant (2018-2019)</h4>
-                        <p className="shortKeyDuties"></p>
+                        {/* <p className="shortKeyDuties"></p>
 
                         <h5 className="shortKeyAccomplishments">Key Accomplishments:</h5>
-                        <p className="shortKeyDuties"></p>
+                        <p className="shortKeyDuties"></p> */}
                     </div>
 
                     <div className="shortRole">
                         <h4 className="shortTimeJobHeader">Service Champion (2017-2018)</h4>
-                        <p className="shortKeyDuties"></p>
+                        {/* <p className="shortKeyDuties"></p>
 
                         <h5 className="shortKeyAccomplishments">Key Accomplishments:</h5>
-                        <p className="shortKeyDuties"></p>
+                        <p className="shortKeyDuties"></p> */}
                     </div>
 
                 </section>
