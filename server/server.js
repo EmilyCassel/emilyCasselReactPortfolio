@@ -35,7 +35,7 @@ app.post('/send', (req, res) => {
     // Set up email data
     let mailOptions = {
         from: email,
-        to: 'your-email@gmail.com', // Replace with your email
+        to: 'emilycassel77@gmail.com', // Replace with the recipient email
         subject: `Message from ${name}`,
         text: message,
     };
