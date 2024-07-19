@@ -61,7 +61,7 @@ main{
   padding-left: 20px;
   font-size: 150%;
   margin: 0;
-  padding: 1px 0px 0px 20px;
+  padding: 1px 0px 0px 25px;
 }
 
 .homePageLinks{
@@ -96,13 +96,14 @@ main{
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 15px 70px 0px 70px;
+  margin: 30px 70px 0px 70px;
 }
 
 .introName{
-  font-size: 425%;
+  font-size: 450%;
   margin: 0;
   color: rgb(177, 38, 98);
+  padding-bottom: 10px;
 }
 
 .introLines{
@@ -526,14 +527,17 @@ hr{
 .projectsHeader{
   display: flex;
   justify-content: center;
-  font-size: 325%;
+  font-size: 375%;
+  text-decoration: underline;
 }
 
 .projectName{
   display: flex;
-  font-size: 225%;
+  font-size: 250%;
   padding: 0px 0px 0px 20px;
   margin: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
 }
 
 .projectBody{
@@ -551,20 +555,35 @@ hr{
 .desKeyHeader{
   display: flex;
   font-size: 175%;
-  padding: 10px 0px 10px 30px;
+  padding: 10px 0px 5px 35px;
   margin: 0;
 }
 
 .desKey{
   display: flex;
   font-size: 125%;
-  padding: 10px 0px 0px 40px;
+  padding: 5px 0px 0px 65px;
   margin: 0;
+  &::before {
+    content: '•'; 
+    position: absolute;
+    left: 48px;
+    font-size: 1.5em; 
+    line-height: 0.8; 
+  }
 }
 
+.allProjectLinks{
+  display: flex;
+  flex-direction: row;
+}
 
-
-
+.projectLink{
+  display: flex;
+  font-size: 125%;
+  padding: 10px 0px 35px 75px;
+  margin: 0;
+}
 
 
 // .projectImage{
@@ -595,25 +614,26 @@ hr{
 
 .blank {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  bottom: 20px;
+  right: 20px; 
+  width: auto; 
   text-align: end;
-  padding: 15px 20px 30px 0px; 
+  padding: 15px 20px 40px 0px;
 }
 
 .backToTopButton {
-  padding: 15px 25px 25px 0px; 
-  font-size: 20px;
-  background-color: rgb(206, 204, 204);
+  padding: 10px 20px; 
+  font-size: 20px; 
+  background-color: rgb(218, 213, 213);;
   border: none;
-  border-radius: 5px;
+  border-radius: 0px;
   cursor: pointer;
 }
 
 .backToTopButton:hover {
-  opacity: 1;
+  background-color: rgb(218, 213, 213);
 }
+
 
 
 
@@ -632,12 +652,12 @@ hr{
   display: flex;
   // background-color: rgb(62, 62, 65);
   // background-color: rgb(211, 116, 137);
-  background-color: rgb(206, 204, 204);;
+  background-color: rgb(218, 213, 213);
   flex-direction: row;
   justify-content: center;
-  color: rgb(211, 116, 137);
+  color: rgb(177, 38, 98);
   font-size: 125%;
-  padding-top: 10px;
+  padding-top: 30px;
   margin: 0;
 }
 

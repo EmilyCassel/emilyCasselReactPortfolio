@@ -198,42 +198,8 @@ function Resume() {
 
 
 
-                     
 
 
-
-
-{/* 
-                        <div className="referenceSection"> */}
-{/* 
-
-
-
-
-                            <div className="referenceEach">
-                                <h3 className="referenceName">Daniel Cassel</h3>
-                                <ul className="aboutReference">
-                                    <li className="referenceInformation">Email: dscassel01@gmail.com</li>
-                                    <li className="referenceInformation">Phone Number: (765)–730–4331</li>
-                                    <li className="referenceInformation">Relationship: Executive Vice President of CU@LilRedBarn Goat Farm/ boss/ brother </li>
-                                    <li className="referenceInformation">Known for 28 years</li>
-                                </ul>
-                            </div>
-
-
-
-
-
-                            <div className="referenceEach">
-                                <h3 className="referenceName">Margot Cassel</h3>
-                                <ul className="aboutReference">
-                                    <li className="referenceInformation">Email: lilredbarn@hotmail.com</li>
-                                    <li className="referenceInformation">Phone Number: (765)–730–0145</li>
-                                    <li className="referenceInformation">Relationship: Executive of CU@LilRedBarn Goat Farm/ boss/ mom</li>
-                                    <li className="referenceInformation">Known for 31 years</li>
-                                </ul>
-                            </div>
-                        </div> */}
                     </div>
                 </section>
                 <div className="blank">
