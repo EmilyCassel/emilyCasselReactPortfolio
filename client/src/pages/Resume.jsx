@@ -22,7 +22,7 @@ function Resume() {
                 </div>
             </div>
             
-            <hr></hr>
+            {/* <hr></hr>
             <div className="resumeAllSections">
                 <section id="skills">
                     <h2 className="summaryHeader">Summary</h2>
@@ -32,7 +32,7 @@ function Resume() {
                         I pursued this program to enrich my technological capabilities while my Customs Brokers License was being processed. During my coding I became completely engaged and recognized my passion for a career in web development.
                     </p>
                 </section>
-            </div>
+            </div> */}
             <hr></hr>
             <div className="resumeAllSections">
                 <section id="skills">
@@ -46,8 +46,19 @@ function Resume() {
                             <p className="skillInformation">jQuery, Bootstrap, Materialize. </p>
                         <h4 className="technicalSkillType">Additional Technical Skills:</h4>
                             <p className="skillInformation">Fluent in responsive design principles, Capable in testing frameworks, Skillful and Creative in Web design and Layout, Practiced in API Integration, Talented in Google Suite, Proficient in Microsoft Office, Competent in Debugging, Literate in Multiple Computer Products</p>
-                    <h3 className="skillTypeSection">Transferable Skills</h3>
-                            <p className="skillInformation">Confident in Project Management, Clear Communicator, Value Customer Satisfaction, Dependable and Flexible, View Work Through Creative Lens, Ability to Work Effectively Both Independently and as a Team, Ability to Adapt Quickly to Changing Situations, Efficiency in with Time Management/Self-Monitoring in Non-Office Work Setting </p>
+                    <h3 className="transferableSkillTypeSection">Transferable Skills</h3>
+                        <ul>
+                            <li className="transferableSkillInformation">Confident in Project Management</li>
+                            <li className="transferableSkillInformation">Clear Communicator</li>
+                            <li className="transferableSkillInformation">Value Customer Satisfaction</li>
+                            <li className="transferableSkillInformation">Dependable and Flexible</li>
+                            <li className="transferableSkillInformation">View Work Through Creative Lens</li>
+                            <li className="transferableSkillInformation">Ability to Work Effectively Both Independently and as a Team</li>
+                            <li className="transferableSkillInformation">Ability to Adapt Quickly to Changing Situations</li>
+                            <li className="transferableSkillInformation">Efficiency in with Time Management/Self-Monitoring in Non-Office Work Setting</li>
+                           
+                        </ul>
+                            
                     
 
                 </section>
@@ -72,7 +83,7 @@ function Resume() {
 
 
 
-                    <h3 className="variousHeader">Various Short Term Roles</h3>
+                    <h3 className="variousHeader">Various Short Term Positions</h3>
 
                     <div className="shortRole">
                         <h4 className="shortTimeJobHeader">Certified Nursing Assistant (2018-2019)</h4>
@@ -116,7 +127,6 @@ function Resume() {
                     <h3 className="educationSchool">University of Lynchburg: Lynchburg Virginia (Graduated) | 2017 - 2021</h3>
               
                     <h4 className="educationWhat">Bachelor of Science - Exercise Physiology</h4>
-                    <h4 className="aboutEducation">A four-year program in Exercise Physiology offering a cutting-edge curriculum, small class sizes, and a focus on anatomy, physiology, and sciences. The program emphasizes analytical thinking, problem-solving, critical thinking, technical skills, and team collaboration, providing a comprehensive education. </h4>
                 </section>
 
 

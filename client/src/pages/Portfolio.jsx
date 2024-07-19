@@ -13,20 +13,21 @@ function Portfolio() {
 
 
 
-          <h2 className="projectName">freeLancer</h2>
+          <h2 className="projectName">freeLancer | <a href="https://github.com/dann9109/freeflow">GitHub | <a href="https://salty-coast-36768-7c025fc4e535.herokuapp.com/">Demo</a>
+          </a>
+          </h2>
           <div className="projectBody">
 
             <div className="projectInformation">
               <h3 className="desKeyHeader">Description:</h3>
-                <p className="desKey">  freeLancer is an application designed to empower freelance workers by enabling them to efficiently track their work hours across multiple projects, and manage project payment statuses. With freeLancer, freelance workers can easily organize their workload and accurately bill clients.</p>
+                <p className="desKey">  Free Lancers is an application designed to empower freelance workers by enabling them to efficiently track their work hours across multiple projects and manage project payment statuses. With FreeLancers, freelance workers can easily organize their workload and accurately bill clients.</p>
               <h3 className="desKeyHeader">Key Features:</h3>
-                
-                  <p className="desKey"> Transparency and Security: Offers clear and detailed breakdowns of billable hours and project costs for full transparency, and implements robust security measures to ensure the protection of user data.</p>
-                  <p className="desKey">Efficient Management: Efficiently track work hours across multiple projects, manage project payment statuses and assign payments to projects, and easily organize workload to maintain productivity.</p>
-                <p className="desKey">Technologies Utilized: HTML, CSS, JavaScript, API Integration, Local Storage Management, Responsive Design, Security protocols.</p>
+                  <p className="desKey"> Implemented security protocols for safety of client and FreeLancer information. </p>
+                  <p className="desKey">Engineered algorithms utilizing JavaScript to dynamically fetch and display project and user information.  </p>
+                  <p className="desKey">Efficiently track work hours across multiple projects, manage project payment statuses and assign payments to projects, and easily organize workload to maintain productivity. </p>
+                  <p className="desKey">Technologies Utilized: HTML, CSS, JavaScript, API Integration, Local Storage Management, Responsive Design, Security protocols.</p>
                   <p className="desKey">Worked as a team to build an application with an agile environment, foster collaboration and user ease and interest.</p>
-              <h3></h3>
-              <h3></h3>
+                  <p className="desKey">I oversaw the front-end development for this project and utilized a visually unique concept to attract users. </p>
            </div>
           
               <img src={freeLancer} className="projectImage" />
@@ -41,18 +42,20 @@ function Portfolio() {
 
 
 
-          <h2 className="projectName">StudentLink</h2>
+          <h2 className="projectName">StudentLink | <a href="https://github.com/shannontice/Student-Link">GitHub | <a href="https://afternoon-waters-14847-beeca698c3b5.herokuapp.com/">Demo</a>
+          </a> 
+          </h2>
           <div className="projectBody">
 
             <div className="projectInformation">
               <h3 className="desKeyHeader">Description:</h3>
-                <p className="desKey">Student Link' empowers students to take control of their study sessions by easily finding study partners or forming groups with a few clicks. Tailor-made for students of all levels, our app fosters collaborative learning through a user-friendly interface that simplifies posting study requests and scheduling sessions. 'Student Link' stands out for its simplicity and efficiency, connecting students effortlessly for shared academic success.</p>
+                <p className="desKey">Student Link' empowers students to take control of their study sessions with a few clicks. Tailor-made for students of all levels, our app fosters collaborative learning through a user-friendly interface that simplifies posting study requests and scheduling sessions. 'Student Link' stands out for its simplicity and efficiency, connecting students effortlessly for shared academic success.</p>
               <h3 className="desKeyHeader">Key Features:</h3>
                 
-                  <p className="desKey">Connectivity and User Experience: Quickly find study partners or form study groups with a few clicks through an intuitive design for posting study requests and scheduling sessions. Supports students of different languages and abilities, fostering a diverse learning environment.</p>
-                  <p className="desKey">Efficient Study Management: Streamlines the process of organizing and managing study sessions, ensuring efficient study management.</p>
-                  <p className="desKey">Technologies Utilized: HTML, CSS, JavaScript, API Integration, Local Storage Management, Responsive Design, Security protocols.</p>
-                  <p className="desKey">Collaboratively developed the application in an agile environment, focusing on its usefulness, user-friendly atmosphere, ease of use, and user interest to enhance the overall experience.</p>
+                  <p className="desKey">Utilized JavaScript, responsive design and API Integration to build an intuitive design to facilitate the building of study groups and connect study partners between individual of fields of study to and for the of posting study requests and scheduling sessions.</p>
+                  <p className="desKey">This program supports students of different languages and abilities, fostering a diverse learning environment.</p>
+                  <p className="desKey">Technologies Utilized: HTML, CSS, JavaScript, Tailwind, API Integration, Local Storage Management, Responsive Design, Security Protocols.</p>
+                  <p className="desKey">Collaboratively developed the front end with a team member utilizing Tailwind and CSS. </p>
                 
               <h3></h3>
               <h3></h3>
