@@ -1,16 +1,76 @@
-function Contact (){
-    return (
-        <div className="allContact">
-         
-            <h1 className="pleaseContact">Please Contact Me at:</h1>
-            <div className="contactBody">
-                <h2 className="singleBody">Email: emilycassel77@gmail.com</h2>
-                <h2 className="singleBody">Phone Number: (765) 730-7163</h2>
-                <h2><a className="linkedInLink" href="https://www.linkedin.com/in/emily-cassel-5a2980245/">LinkedIn</a></h2>
-            </div>
-        </div>
-     )
- }
- 
+import React, { useState } from 'react';
 
- export default Contact;
+
+function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    fetch('/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then((response) => response.text())
+    .then((data) => {
+      alert('Message sent successfully');
+      setFormData({ name: '', email: '', message: '' }); // Clear form after submission
+    })
+    .catch((error) => {
+      alert('Failed to send message');
+    });
+  };
+
+  return (
+    <div className="contact-container">
+      <h1 className="contact-header">Contact Me</h1>
+      <p className="contact-subheader">I'm looking forward to working with you!</p>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          className="contact-input"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          className="contact-input"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Send me a Message"
+          className="contact-textarea"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        ></textarea>
+        <button type="submit" className="contact-button">Send</button>
+      </form>
+    </div>
+  );
+}
+
+export default Contact;

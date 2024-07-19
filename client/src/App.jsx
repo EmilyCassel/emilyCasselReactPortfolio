@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 import {Header, Footer} from './components'
 
-import {Home, Portfolio, Resume, AboutMe}  from './pages'
+import {Home, Portfolio, Resume, AboutMe, Contact}  from './pages'
 
 
 
@@ -25,6 +25,7 @@ function App() {
             <Route path="/AboutMe" element={<AboutMe />} />
 
             <Route path="/Resume" element={<Resume />} />
+            <Route path="/Contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer/>
