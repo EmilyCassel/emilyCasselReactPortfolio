@@ -32,7 +32,7 @@ function Contact() {
       setTimeout(() => {
         setShowSuccessMessage(false);
       }, 3000);
-      setFormData({ name: '', email: '', message: '' }); // Clear form after submission
+      setFormData({ name: '', email: '', message: '' }); 
     })
     .catch((error) => {
       alert('Failed to send message');
