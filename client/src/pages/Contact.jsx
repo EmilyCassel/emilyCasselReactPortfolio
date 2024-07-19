@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
-
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,8 +28,11 @@ function Contact() {
     })
     .then((response) => response.text())
     .then((data) => {
-      alert('Message sent successfully');
-      setFormData({ name: '', email: '', message: '' }); // Clear form after submission
+      setShowSuccessMessage(true);
+      setTimeout(() => {
+        setShowSuccessMessage(false);
+      }, 3000);
+      setFormData({ name: '', email: '', message: '' }); 
     })
     .catch((error) => {
       alert('Failed to send message');
@@ -37,38 +40,45 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container">
-      <h1 className="contact-header">Contact Me</h1>
-      <p className="contact-subheader">I'm looking forward to working with you!</p>
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          className="contact-input"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          className="contact-input"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        <textarea
-          name="message"
-          placeholder="Send me a Message"
-          className="contact-textarea"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        ></textarea>
-        <button type="submit" className="contact-button">Send</button>
-      </form>
+    <div className="contact-page">
+      {showSuccessMessage && (
+        <div className="success-message">
+          Message sent successfully
+        </div>
+      )}
+      <div className="contact-container">
+        <h1 className="contact-header">Contact Me</h1>
+        <p className="contact-subheader">I'm looking forward to working with you!</p>
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            className="contact-input"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            className="contact-input"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Send me a Message"
+            className="contact-textarea"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          ></textarea>
+          <button type="submit" className="contact-button">Send</button>
+        </form>
+      </div>
     </div>
   );
 }
