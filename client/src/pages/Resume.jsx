@@ -6,7 +6,6 @@ function Resume() {
         <div className="resumeAll">
 
             <div className="inPageLinks">
-                <div className="fourLinksOne">
                     <button className="resumeLinkButton" onClick={() => scrollToSection('skills')}>Skills</button>
                     <a href="/Portfolio">
                         <button className="resumeLinkButton">Projects</button>
@@ -15,11 +14,6 @@ function Resume() {
                     <button className="resumeLinkButton" onClick={() => scrollToSection('education')}>Education</button>
                     <button className="resumeLinkButton" onClick={() => scrollToSection('languageSkills')}>Language Skills</button> 
                      <button className="resumeLinkButton" onClick={() => scrollToSection('references')}>References</button>
-                       
-                   
-                 
-                   
-                </div>
             </div>
             
             {/* <hr></hr>

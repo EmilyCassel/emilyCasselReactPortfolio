@@ -9,6 +9,12 @@ function Portfolio() {
 
   return (
     <div>
+      <div className="inProjectLinks">
+          <button className="projectLinkButton" onClick={() => scrollToSection('workExperience')}>Completed Projects</button>
+          <button className="projectLinkButton" onClick={() => scrollToSection('education')}>In-Progress Projects</button>
+        </div>
+      <hr></hr>
+
       <div className="allProjects">
         <div className="allCompletedProjects">
           <h1 className="projectsHeader">Completed Projects</h1>
