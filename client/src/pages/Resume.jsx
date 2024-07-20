@@ -60,7 +60,7 @@ function Resume() {
 
                 <section id="workExperience">
                     <h2 className="sectionHeader">Work Experience</h2>
-                        <h3 className="workHeader">Executive Assistant to Family Farm (2011 - Present) </h3>
+                        <h3 className="workHeader">Executive Assistant(2011 - Present) </h3>
                             <h4 className="workBusiness">CU@LilRedBarn Nigerian Dwarf Dairy Goat Farm, Muncie Indiana</h4>
                                 <p className="dutiesKey">Handled a diverse range of responsibilities, including assistance with filing and maintenance of pedigree documents with American Dairy Goat Association, animal care, maintenance  and care of farm property and operations, technical support for record keeping  </p>
                                 <h5 className="keyAccomplishments">Key Accomplishments:</h5>

@@ -4,6 +4,7 @@ const path = require('path');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+require('dotenv').config();
 
 app.use(express.json());
 app.use(bodyParser.json());
@@ -19,30 +20,30 @@ if (process.env.NODE_ENV === 'production') {
     });
 }
 
-// Email sending route
 app.post('/send', (req, res) => {
     const { name, email, message } = req.body;
 
-    // Create a transporter object using SMTP transport
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'your-email@gmail.com', // Replace with your email
-            pass: 'your-email-password', // Replace with your email password
+            type: 'OAuth2',
+            user: process.env.EMAIL_USER,
+            clientId: process.env.OAUTH_CLIENTID,
+            clientSecret: process.env.OAUTH_CLIENT_SECRET,
+            refreshToken: process.env.OAUTH_REFRESH_TOKEN,
         },
     });
 
-    // Set up email data
     let mailOptions = {
         from: email,
-        to: 'emilycassel77@gmail.com', // Replace with the recipient email
+        to: 'emilycassel77@gmail.com',
         subject: `Message from ${name}`,
         text: message,
     };
 
-    // Send mail with defined transport object
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
+            console.error('Error sending email:', error); 
             return res.status(500).send(error.toString());
         }
         res.status(200).send('Message sent: ' + info.response);
