@@ -12,7 +12,7 @@ function AboutMe() {
                 <div className="aboutMeSummaryBox">
                     <h1 className="aboutMeHeader">About Me</h1>
                     <p className="aboutMeParagraph">
-                        Versatile Full Stack Web Developer with comprehensive training from Rutgers University Coding Bootcamp, specializing in JavaScript, CSS, and UI/UX design and development. Adept at collaborating within Agile environments, delivering clean code, and communicating effectively. Dedicated to continuous learning and innovation in both front-end and back-end technologies.
+                        I am an enthusiastic Full Stack Web Developer with training from Rutgers University Coding Bootcamp, specializing in JavaScript, CSS, and UI/UX design and development.
                     </p>
                     <p className="aboutMeParagraph">
                         Reflecting on my experiences and newfound interests, I discovered a passion for web development. Enrolling in the Full-Stack Web Development Course at Rutgers University solidified this passion, as I found excitement and fulfillment in crafting digital solutions. Now, with a diverse skill set and fervent enthusiasm, I am eager to contribute my expertise, creativity, and perseverance as a Full-Stack Web Developer.

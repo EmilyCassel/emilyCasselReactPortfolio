@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <body className={`${isDarkMode ? 'dark' : ''}`}>
+      <div className={`${isDarkMode ? 'dark' : ''}`}>
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         <main>
 
@@ -29,7 +29,7 @@ function App() {
           </Routes>
         </main>
         <Footer/>
-      </body>
+      </div>
     </div>
   )
 }
